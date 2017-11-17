@@ -1,0 +1,162 @@
+.Hidden {
+	DISPLAY: none;
+}
+a:link {
+   text-decoration: none;
+   color : #000000;
+}
+
+a:vlink {
+   text-decoration: none;
+   color : #000000;
+}
+a:visited {
+  text-decoration:  none;
+  } 
+a:hover {
+   color : #ff6800;
+}
+a:active  {
+  text-decoration:  underline;
+  } 
+a:orangeColor {
+    color : #ff6800;
+    font-color : #ff6800;
+}
+.ErrorNote {
+    font-family : Arial, Verdana, sans-serif;
+    font-size : 10px;
+    font-weight : Bold;
+    color : #ff6800;
+}
+.solar0 {
+    font-family : Arial;
+    font-size : 96px;
+    font-weight : Bold;
+    font-color : #000000;
+}
+.blueSolar0 {
+    font-family : Arial;
+    font-size : 96px;
+    font-weight : Bold;
+    font-color : #0066CC;
+}
+
+
+.solar1 {
+    font-family : Tahoma, Helvetic, Arial, Verdana, sans-serif;
+    font-size : 36px;
+    font-weight : Normal;
+    font-color : #000000;
+}
+.solar2 {
+    font-family : 'trebuchet ms', Tahoma, Helvetic, Arial, Verdana, sans-serif;
+    font-size : 18px;
+    font-weight : Bold;
+    font-color : #000000;
+}
+.solar3 {
+    font-family : 'trebuchet ms', Tahoma, Arial,Tahoma, Helvetic, Verdana, sans-serif;
+    font-size : 14px;
+    font-weight : Bold;
+    color : #000000;
+     text-decoration: none;
+     line-height: 200%;
+}
+.orangesolar3 {
+    font-family : Arial,Tahoma, Helvetic, Verdana, sans-serif;
+    font-size : 14px;
+    font-weight : Bold;
+    font-color : #ff6800;
+    color : #ff6800;
+     text-decoration: none;
+     line-height: 200%;
+}
+.nasaorange {
+    font-color : #ff6800;
+    color : #ff6800;
+}
+.green1 {
+    font-color : #14bc53;
+    color : #14bc53;
+}
+.red1 {
+    font-color : #ea0c0c;
+    color : #ea0c0c;
+}
+.solar4 {
+    font-family : Tahoma, Helvetic, Arial, Verdana, sans-serif;
+    font-size : 12px;
+    font-weight : Normal;
+    cellpadding : 10;
+    font-color : #000000;
+}
+.solar5 {
+    font-family : Tahoma, Helvetic, Arial, Verdana, sans-serif;
+    font-size : 8px;
+    font-weight : Normal;
+    font-color : #000000;
+}
+.solar6 {
+    font-family : Tahoma, Helvetic, Arial, Verdana, sans-serif;
+    font-size : 10px;
+    font-weight : Normal;
+    font-color : #000000;
+}
+
+.toggler {
+	color: #222;
+	margin: 0;
+	padding: 2px 5px;
+	background: #eee;
+	border-bottom: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	border-top: 1px solid #f5f5f5;
+	border-left: 1px solid #f5f5f5;
+	font-size: 11px;
+	font-weight: normal;
+	font-family: 'Andale Mono', sans-serif;
+}
+ 
+.element {
+ 
+}
+ 
+.element p {
+	margin: 0;
+	padding: 4px;
+}
+ 
+.float-right {
+	padding:10px 20px;
+	float:right;
+}
+ 
+blockquote {
+	text-style:italic;
+	padding:5px 0 5px 30px;
+}
+
+.bl_orange {background: url(../images/bl_orange.gif) 0 100% no-repeat #e68200; width: 100%}
+.br_orange {background: url(../images/br_orange.gif) 100% 100% no-repeat}
+.tl_orange {background: url(../images/tl_orange.gif) 0 0 no-repeat}
+.tr_orange {background: url(../images/tr_orange.gif) 100% 0 no-repeat; padding:15	px}
+
+
+.bl_green {background: url(../images/bl_green.png) 0 100% no-repeat #98ed72; width: 100%}
+.br_green {background: url(../images/br_green.png) 100% 100% no-repeat}
+.tl_green {background: url(../images/tl_green.png) 0 0 no-repeat}
+.tr_green {background: url(../images/tr_green.png) 100% 0 no-repeat; padding:15	px}
+
+.bl_blue {background: url(../images/bl_blue.png) 0 100% no-repeat #a59fcd; width: 100%}
+.br_blue {background: url(../images/br_blue.png) 100% 100% no-repeat}
+.tl_blue {background: url(../images/tl_blue.png) 0 0 no-repeat}
+.tr_blue {background: url(../images/tr_blue.png) 100% 0 no-repeat; padding:15	px}
+
+
+.bl_g2 {background: url(../images/bl_green2.png) 0 100% no-repeat #00c700; width: 100%}
+.br_g2 {background: url(../images/br_green2.png) 100% 100% no-repeat}
+.tl_g2 {background: url(../images/tl_green2.png) 0 0 no-repeat}
+.tr_g2 {background: url(../images/tr_green2.png) 100% 0 no-repeat; padding:15	px}
+
+.clear {font-size: 1px; height: 1px}
