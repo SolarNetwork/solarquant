@@ -1,0 +1,47 @@
+# no apache files
+*.htaccess
+
+# nothing in the extra folder
+extra/
+
+#nothing in the database folder
+database/
+
+#nothing in the inputFiles folder
+emergent/inputFiles/*.dat
+
+#nothing in the output folder
+emergent/output/*.csv
+
+#nothing in the output folder
+emergent/log/*
+
+#not the emergent extra folder
+emergent/extra/
+
+#any weights files
+emergent/weights/*.wts
+
+#admin images not needed
+admin/images/
+
+#anything in /ini except .example
+ini/*.txt
+ini/*.ini
+ini/*.sh
+
+#no data from inputFiles
+emergent/Inputfiles/*
+emergent/log/*
+emergent/output/*
+emergent/weights/*
+
+#no api folder (yet)
+api/
+
+
+# ignore all files ending with ~
+*~
+
+
+
