@@ -133,12 +133,22 @@ $myCalendar->writeScript();
 </tr>
 <tr>
 	<td ><span class="solar4">PatternSet Status Id <br>(0 = not processed queued for processing)</span></td>
-	<td><input class="solar4" type="text" name="statusId" value="" size="4"></td>
+	<td><input class="solar4" type="text" name="statusId" value="0" size="4"></td>
 	
 </tr>
 <tr>
 	<td ><span class="solar4">PatternSet Type Id <br>(1 = consumption, 2 = generation, 3 = both consumption and generation, 4 = forecast)</span></td>
-	<td><input class="solar4" type="text" name="patternSetTypeId" value="" size="4"></td>
+	<td>
+		
+	<select class="solar4"  name="patternSetTypeId" id="patternSetTypeId">
+	<option value="1">Consumption</option>
+	<option value="2">Generation</option>
+	<option value="3">Not Used</option>
+	<option value="4">Forecast</option>
+	</select>
+	
+	
+	</td>
 	
 </tr>
 <tr>
