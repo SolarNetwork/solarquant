@@ -1643,7 +1643,7 @@ BpProject .projects[0] {
  };
 };
 BpProject .projects[0] {
- name="consumption_bp_nogui_20160321a_convert2";
+ name="consumption_bp_nogui_20160321a_5000epochs_0batches";
  desc=;
  tags=;
  version {
@@ -4065,7 +4065,7 @@ trying bidirectional
      ProgVar @[2] {
       name="max_batch";
       var_type=T_Int;
-      int_val=3;
+      int_val=0;
       object_scope=NULL;
       flags=CTRL_PANEL|NULL_CHECK|SAVE_VAL|USED|EDIT_VAL|PGRM_ARG;
       reference=0;
@@ -4451,7 +4451,7 @@ trying bidirectional
      ProgVar @[0] {
       name="max_epoch";
       var_type=T_Int;
-      int_val=2000;
+      int_val=5000;
       object_scope=NULL;
       flags=CTRL_PANEL|NULL_CHECK|SAVE_VAL|USED|EDIT_VAL;
       reference=0;
@@ -10201,7 +10201,7 @@ this program can be extended to do arbitrary things to generate data and apply i
     UserDataItem @[0] {name="view_win_lft": value=0: val_type_fixed=0: };
     UserDataItem @[1] {name="view_win_top": value=0.08951407: val_type_fixed=0: };
     UserDataItem @[2] {name="view_win_wd": value=1: val_type_fixed=0: };
-    UserDataItem @[3] {name="view_win_ht": value=0.7459506: val_type_fixed=0: };
+    UserDataItem @[3] {name="view_win_ht": value=0.7774936: val_type_fixed=0: };
     UserDataItem @[4] {name="view_win_iconified": value=0: val_type_fixed=0: };
     UserDataItem @[5] {name="view_splitter_state": value=AAAA/wAAAAEAAAADAAACSQAAAa8AAAMOAQAAAAYBAAAAAQA=: val_type_fixed=0: };
    };
@@ -10209,7 +10209,7 @@ this program can be extended to do arbitrary things to generate data and apply i
    m_data=.$$;
    cur_font_size=10;
    visible=1;
-   win_name=".projects[\"consumption_bp_nogui_20160321a_convert2\"] - consumption_bp_nogui_20160321a_convert2.proj [*]";
+   win_name=".projects[\"consumption_bp_nogui_20160321a_5000epochs_0batches\"] - consumption_bp_nogui_20160321a_5000epochs_0batches.proj [*]";
    m_is_root=0;
    m_is_viewer_xor_browser=0;
    m_is_proj_viewer=1;
@@ -10383,7 +10383,7 @@ this program can be extended to do arbitrary things to generate data and apply i
       UserDataItem @[0] {name="view_win_lft": value=0: val_type_fixed=0: };
       UserDataItem @[1] {name="view_win_top": value=-0.005967604: val_type_fixed=0: };
       UserDataItem @[2] {name="view_win_wd": value=0.04583333: val_type_fixed=0: };
-      UserDataItem @[3] {name="view_win_ht": value=0.6768969: val_type_fixed=0: };
+      UserDataItem @[3] {name="view_win_ht": value=0.7101449: val_type_fixed=0: };
       UserDataItem @[4] {name="view_win_iconified": value=0: val_type_fixed=0: };
       UserDataItem @[5] {name="view_visible": value=1: val_type_fixed=0: };
      };
