@@ -16,6 +16,9 @@ emergent/output/*.csv
 #nothing in the output folder
 emergent/log/*
 
+#not the v7 file
+emergent/consumption_bp_nogui_20160321a.proj
+
 #not the emergent extra folder
 emergent/extra/
 
