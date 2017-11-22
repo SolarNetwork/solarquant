@@ -20,6 +20,7 @@ class ConsumptionPatternSet {
     var $notes;
     var $startDateTime;
     var $endDateTime;
+    //datetime based weights
     var $timeOfDayWeight = 0;
     var $dayOfYearWeight = 0;
     var $isMondayWeight = 0;
@@ -29,6 +30,7 @@ class ConsumptionPatternSet {
     var $isFridayWeight = 0;
     var $isSaturdayWeight = 0;
     var $isSundayWeight = 0;
+    //weather based weights
     var $barometricPressureWeight = 0;
     var $humidityOutsideWeight = 0;
     var $temperatureOutsideWeight = 0;
