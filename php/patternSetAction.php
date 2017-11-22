@@ -491,8 +491,7 @@ if ($theButton == "")
 		header ("Location: patternSetAction.php?function=list&displayMode=fullPage");               
 
 	}
-	
-	
+		
 	//function = viewCorrelation 
 	elseif ($function == "viewCorrelation")
 	{
