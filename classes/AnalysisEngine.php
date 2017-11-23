@@ -1,6 +1,6 @@
 <?php
 
-require_once "/var/www/html/solarquant/classes/SolarError.inc";
+require_once "/var/www/html/solarquant/classes/SolarError.php";
 //require_once "/var/www/html/solarquant/classes/node.php";
 require_once "/var/www/html/solarquant/classes/SolarUtility.php";
 

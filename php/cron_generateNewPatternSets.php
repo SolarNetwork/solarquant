@@ -6,9 +6,9 @@
 
 //imports
 require_once "/var/www/html/solarquant/classes/node.php";
-require_once "/var/www/html/solarquant/classes/PowerDatum.inc";
+require_once "/var/www/html/solarquant/classes/PowerDatum.php";
 require_once "/var/www/html/solarquant/classes/PatternSet.php";
-require_once "/var/www/html/solarquant/classes/SolarError.inc";
+require_once "/var/www/html/solarquant/classes/SolarError.php";
 require_once "/var/www/html/solarquant/classes/SolarUtility.php";
 
 //debug 

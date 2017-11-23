@@ -7,11 +7,11 @@ echo "in cron_refreshForecastPatternSets <br />";
 
 //imports
 require_once "/var/www/html/solarquant/classes/node.php";
-require_once "/var/www/html/solarquant/classes/PowerDatum.inc";
+require_once "/var/www/html/solarquant/classes/PowerDatum.php";
 require_once "/var/www/html/solarquant/classes/SolarUtility.php";
 require_once "/var/www/html/solarquant/classes/PatternSet.php";
 require_once "/var/www/html/solarquant/classes/ConsumptionPatternSet.php";
-require_once "/var/www/html/solarquant/classes/SolarError.inc";
+require_once "/var/www/html/solarquant/classes/SolarError.php";
 
 //write to training log
 $messageDigest = date("Y-m-d H:i:s")." start of cron_refreshForecastPatternSets "."\n" ;

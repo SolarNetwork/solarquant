@@ -5,7 +5,7 @@
 		
 		
 //imports
-require_once "/var/www/html/solarquant/classes/SolarError.inc";
+require_once "/var/www/html/solarquant/classes/SolarError.php";
 
 		//imports
 //require "../classes/node.php";

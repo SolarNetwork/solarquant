@@ -12,7 +12,7 @@
 
 require_once "/var/www/html/solarquant/classes/WeatherDatum.inc";
 require_once "/var/www/html/solarquant/classes/SolarUtility.php";
-require_once "/var/www/html/solarquant/classes/SolarError.inc";
+require_once "/var/www/html/solarquant/classes/SolarError.php";
 
 //echo("in node.php after imports 2<br>");
 
