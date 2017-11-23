@@ -24,6 +24,9 @@
 require_once('../classes/tc_calendar.php');
 require_once ("../classes/SolarUtility.php");
 
+//TODO make this reflect the patternset
+$defaultEngineId = 2;
+
 $nodeId = $_REQUEST['nodeId'];
 
 if (isset($nodeId))
@@ -54,14 +57,7 @@ else
 
 ?>
 
-<table cellpadding='15' width='700' cellspacing='15' class='table table-striped' border='0'>
-
-<tr>
-	<td ><span class="solar4">Nodes to include</span></td>
-	<td>
-	
-	<?php
-	
+<?php
 	/* if there isn't an existing link */
 	if ($link = " "){
 			/* create a link to the database*/
@@ -72,6 +68,40 @@ else
 			$link = new mysqli($theUtility->dbHost,$theUtility->dbUser,$theUtility->dbPassword,$theUtility->dbName);
 			
 	}
+?>
+<table cellpadding='15' width='700' cellspacing='15' class='table table-striped' border='0'>
+
+<tr>
+	<td ><span class="solar4">Analysis Engine</span></td>
+	<td>
+	
+	<?php
+	
+
+	    		//echo("before require engine<br>");
+
+		require_once('../classes/AnalysisEngine.php');
+
+		//echo("after require engine<br>");
+
+		$theEngine = new AnalysisEngine;
+
+		//echo("after instant engine<br>");
+	
+			//call list function
+		$theEngine->listAll("selectBox",$defaultEngineId);
+	?>
+	</td>
+	
+</tr>
+
+<tr>
+	<td ><span class="solar4">Nodes to include</span></td>
+	<td>
+	
+	<?php
+	
+
 	
 		require_once('../classes/node.php');
 		$theNode = new Node;

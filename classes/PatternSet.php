@@ -6,6 +6,7 @@ require_once "/var/www/html/solarquant/classes/PowerDatum.inc";
 require_once "/var/www/html/solarquant/classes/SolarUtility.php";
 require_once "/var/www/html/solarquant/classes/TrainingFile.inc";
 require_once "/var/www/html/solarquant/classes/SolarError.inc";
+require_once "/var/www/html/solarquant/classes/AnalysisEngine.php";
 //require "../classes/WeatherDatum.inc";
 
 //patternSet statuses:
@@ -47,7 +48,8 @@ class PatternSet {
     var $nodes = array();
     var $trainingFiles = array();
     var $sourceIds;
-    var $statusId;
+	var $statusId;
+	var $analysisEngineId;
     var $patternSetTypeId;
     var $virtualWeatherTypeId;
     var $dbLink;
@@ -1599,7 +1601,7 @@ keygen 4 0=0;
     	}
     	
     	    	//setup sql 
-		$sql = "select pattern_set_id, start_date, end_date, pattern_set_name, notes, status_id, pattern_set_type_id from pattern_set where pattern_set_id = ".$this->id;
+		$sql = "select pattern_set_id, start_date, end_date, pattern_set_name, notes, status_id, analysis_engine_id, pattern_set_type_id from pattern_set where pattern_set_id = ".$this->id;
 		
 		//echo("patternset construct sql:". $sql. "<br>");
 		
@@ -1712,6 +1714,7 @@ keygen 4 0=0;
     	$this->name = $row["pattern_set_name"];
 	$this->notes = $row["notes"];
 	$this->statusId = $row["status_id"];
+	$this->analysisEngineId = $row["analysis_engine_id"];
 	$this->patternSetTypeId = $row["pattern_set_type_id"]; 
 
     }
@@ -2057,7 +2060,7 @@ keygen 4 0=0;
     	
     
 		/* setup sql*/
-		$sql = "insert into pattern_set (pattern_set_name, start_date, end_date, status_id, pattern_set_type_id, notes) values (\"$this->name\",\"$this->startDate\",\"$this->endDate\",$this->statusId,$this->patternSetTypeId,\"$this->notes\")";
+		$sql = "insert into pattern_set (pattern_set_name, start_date, end_date, status_id, analysis_engine_id, pattern_set_type_id, notes) values (\"$this->name\",\"$this->startDate\",\"$this->endDate\",$this->statusId,$this->analysisEngineId,$this->patternSetTypeId,\"$this->notes\")";
 
 		echo("sql:". $sql. "<br>");
 		
@@ -2207,6 +2210,17 @@ $myCalendar->writeScript();
 			echo("<td><input type='text' name='statusId' value='$this->statusId' size='10'> 0=queued Not Processed, 1=Currently In Process. 2=finished properly 3 = NN weights created
  4 = training file created (trainingFileCreated) 5 = training underway  6 = training completed successfully 7 = questioningFileUnderway 8 = questioning completed successfully</td>");
 		echo("</tr>");	
+
+		echo("<tr>");
+		echo("<td bgcolor='#ffffff'>AnalysisEngine</td>");
+		echo("<td>");
+		
+		$theEngine = new AnalysisEngine;
+		$theEngine->listAll("selectBox",$this->analysisEngineId);
+
+		echo("</td>");
+	echo("</tr>");	
+
 		echo("<tr>");
 			echo("<td bgcolor='#ffffff'>patternSetTypeId</td>");
 			echo("<td><input type='text' name='patternSetTypeId' value='$this->patternSetTypeId' size='10'> 1=Consumption, 2=Generation, 3=Generation+Consumption    </td>");
@@ -2548,9 +2562,16 @@ function getNorwegianWeatherFromForecast($theNodeId)
 //create utility
 $theUtility = new SolarUtility;
 
+		//log an logentry
+		$theError = new SolarError;
+		$theError->module = "PatternSet::getNorwegianWeatherFromForecast";
+		$theError->details = "before instantiate node - nodeId:".$theNodeId;
+		$theError->add();
+
 //instantiate the node
 $theNode = new Node;
-$theNode->id = theNodeId;
+$theNode->id = $theNodeId;
+$theNode->constructFromId();
 
 
 //set the file as something unique
@@ -2578,7 +2599,9 @@ $forecastArray = array(
 
 //second pass array with columns: 0: time 1:temperature 2:pressure 3: sky
 //set the URL for forecast information
-$ch = curl_init("http://api.met.no/weatherapi/locationforecast/1.9/?lat=-36.8;lon=174");
+$theEndpoint = "http://api.met.no/weatherapi/locationforecast/1.9/?lat=".$theNode->latitude.";lon=".$theNode->longitude;
+$ch = curl_init($theEndpoint);
+//$ch = curl_init("http://api.met.no/weatherapi/locationforecast/1.9/?lat=-36.8;lon=174");
 //open the file
 $fp = fopen($theFile, "w");
 //set curl settings
