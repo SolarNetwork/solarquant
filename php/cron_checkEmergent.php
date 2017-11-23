@@ -36,7 +36,7 @@ echo "emergentMode:".$emergentMode."<br>\n";
 
 //imports
 require_once "/var/www/html/solarquant/classes/node.php";
-require_once "/var/www/html/solarquant/classes/TrainingFile.inc";
+require_once "/var/www/html/solarquant/classes/TrainingFile.php";
 require_once "/var/www/html/solarquant/classes/TrainingDatum.php";
 require_once "/var/www/html/solarquant/classes/SolarUtility.php";
 require_once "/var/www/html/solarquant/classes/SolarError.php";

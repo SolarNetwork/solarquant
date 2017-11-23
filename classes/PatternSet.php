@@ -4,10 +4,10 @@ require_once "/var/www/html/solarquant/classes/node.php";
 require_once "/var/www/html/solarquant/classes/ConsumptionDatum.php";
 require_once "/var/www/html/solarquant/classes/PowerDatum.php";
 require_once "/var/www/html/solarquant/classes/SolarUtility.php";
-require_once "/var/www/html/solarquant/classes/TrainingFile.inc";
+require_once "/var/www/html/solarquant/classes/TrainingFile.php";
 require_once "/var/www/html/solarquant/classes/SolarError.php";
 require_once "/var/www/html/solarquant/classes/AnalysisEngine.php";
-//require "../classes/WeatherDatum.inc";
+//require "../classes/WeatherDatum.php";
 
 //patternSet statuses:
 

@@ -3,7 +3,7 @@
 		//echo("in trainingFileAction");
 		
 		//imports
-require_once "/var/www/html/solarquant/classes/TrainingFile.inc";
+require_once "/var/www/html/solarquant/classes/TrainingFile.php";
 
 		//imports
 //require "../classes/node.php";

@@ -7,7 +7,7 @@
 require_once "../classes/PatternSet.php";
 require_once "../classes/ConsumptionPatternSet.php";
 require_once "/var/www/html/solarquant/classes/SolarUtility.php";
-require_once "/var/www/html/solarquant/classes/TrainingFile.inc";
+require_once "/var/www/html/solarquant/classes/TrainingFile.php";
 
 echo("after imports<br>");
 

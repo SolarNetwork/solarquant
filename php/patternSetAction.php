@@ -22,7 +22,7 @@ require_once "../classes/ConsumptionPatternSet.php";
 //exit;
 
 require_once "/var/www/html/solarquant/classes/SolarUtility.php";
-require_once "/var/www/html/solarquant/classes/TrainingFile.inc";
+require_once "/var/www/html/solarquant/classes/TrainingFile.php";
 
 
 		//echo("nodeAction after all imports 2");

@@ -7,10 +7,10 @@
 //echo("after yo import<br>");
 
 //imports
-#require_once "/var/www/html/solarquant/classes/WeatherDatum.inc";
+#require_once "/var/www/html/solarquant/classes/WeatherDatum.php";
 #require_once "/var/www/html/solarquant/classes/SolarUtility.php";
 
-require_once "/var/www/html/solarquant/classes/WeatherDatum.inc";
+require_once "/var/www/html/solarquant/classes/WeatherDatum.php";
 require_once "/var/www/html/solarquant/classes/SolarUtility.php";
 require_once "/var/www/html/solarquant/classes/SolarError.php";
 
