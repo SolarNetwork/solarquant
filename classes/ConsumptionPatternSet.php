@@ -1,7 +1,7 @@
 <?php
 
 //require "../classes/node.php";
-//require "../classes/ConsumptionDatum.inc";
+//require "../classes/ConsumptionDatum.php";
 //require "../classes/Test1Datum.inc";
 require_once "/var/www/html/solarquant/classes/SolarError.inc";
 require_once "/var/www/html/solarquant/classes/node.php";
