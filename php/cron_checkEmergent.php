@@ -35,7 +35,7 @@ echo "after jobticketfound<br>\n";
 echo "emergentMode:".$emergentMode."<br>\n";
 
 //imports
-require_once "/var/www/html/solarquant/classes/node.inc";
+require_once "/var/www/html/solarquant/classes/node.php";
 require_once "/var/www/html/solarquant/classes/TrainingFile.inc";
 require_once "/var/www/html/solarquant/classes/TrainingDatum.inc";
 require_once "/var/www/html/solarquant/classes/SolarUtility.php";

@@ -1,6 +1,6 @@
 <?php
 
-//require_once "/var/www/html/solarquant/classes/node.inc";
+//require_once "/var/www/html/solarquant/classes/node.php";
 //require_once "/var/www/html/solarquant/classes/ConsumptionDatum.inc";
 //require_once "/var/www/html/solarquant/classes/PowerDatum.inc";
 require_once "/var/www/html/solarquant/classes/SolarUtility.php";

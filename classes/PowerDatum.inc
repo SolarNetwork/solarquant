@@ -1,6 +1,6 @@
 <?php
 
-//require "../classes/node.inc";
+//require "../classes/node.php";
 require_once "/var/www/html/solarquant/classes/SolarUtility.php";
 
 class PowerDatum {

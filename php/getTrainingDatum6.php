@@ -1,6 +1,6 @@
 <?php
 
-//require_once "/var/www/html/solarquant/classes/node.inc";
+//require_once "/var/www/html/solarquant/classes/node.php";
 require_once "/var/www/html/solarquant/classes/SolarUtility.php";
 
 //if there isn't an existing link 

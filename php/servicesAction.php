@@ -6,7 +6,7 @@
 require_once "/var/www/html/solarquant/classes/SolarError.inc";
 
 		//imports
-//require "../classes/node.inc";
+//require "../classes/node.php";
 
 //echo("nodeAction after node import");
 

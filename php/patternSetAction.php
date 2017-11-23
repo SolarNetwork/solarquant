@@ -13,7 +13,7 @@ require_once "../classes/ConsumptionPatternSet.php";
 
 //echo("patternSetAction after ConsumptionPatternSet import<br>");
 		//imports
-//require "../classes/node.inc";
+//require "../classes/node.php";
 
 
 

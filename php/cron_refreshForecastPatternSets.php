@@ -6,7 +6,7 @@ echo "in cron_refreshForecastPatternSets <br />";
 //TODO add logfile entries for this process
 
 //imports
-require_once "/var/www/html/solarquant/classes/node.inc";
+require_once "/var/www/html/solarquant/classes/node.php";
 require_once "/var/www/html/solarquant/classes/PowerDatum.inc";
 require_once "/var/www/html/solarquant/classes/SolarUtility.php";
 require_once "/var/www/html/solarquant/classes/PatternSet.php";

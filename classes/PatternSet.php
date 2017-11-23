@@ -1,6 +1,6 @@
 <?php
 
-require_once "/var/www/html/solarquant/classes/node.inc";
+require_once "/var/www/html/solarquant/classes/node.php";
 require_once "/var/www/html/solarquant/classes/ConsumptionDatum.inc";
 require_once "/var/www/html/solarquant/classes/PowerDatum.inc";
 require_once "/var/www/html/solarquant/classes/SolarUtility.php";
@@ -2547,6 +2547,11 @@ function getNorwegianWeatherFromForecast($theNodeId)
 
 //create utility
 $theUtility = new SolarUtility;
+
+//instantiate the node
+$theNode = new Node;
+$theNode->id = theNodeId;
+
 
 //set the file as something unique
 //$theFile = "/tmp/".time().".txt";

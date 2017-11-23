@@ -5,7 +5,7 @@
 		
 		
 //imports
-require_once "/var/www/html/solarquant/classes/node.inc";
+require_once "/var/www/html/solarquant/classes/node.php";
 
 //echo("nodeAction after node import");
 

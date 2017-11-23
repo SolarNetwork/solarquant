@@ -1,10 +1,10 @@
 <?php
 
-//require "../classes/node.inc";
+//require "../classes/node.php";
 //require "../classes/ConsumptionDatum.inc";
 //require "../classes/Test1Datum.inc";
 require_once "/var/www/html/solarquant/classes/SolarError.inc";
-require_once "/var/www/html/solarquant/classes/node.inc";
+require_once "/var/www/html/solarquant/classes/node.php";
 require_once "/var/www/html/solarquant/classes/SolarUtility.php";
 
 class ConsumptionPatternSet {

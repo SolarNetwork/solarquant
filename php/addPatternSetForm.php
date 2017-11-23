@@ -73,7 +73,7 @@ else
 			
 	}
 	
-		require_once('../classes/node.inc');
+		require_once('../classes/node.php');
 		$theNode = new Node;
 	
 			//call list function
