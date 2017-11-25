@@ -2057,12 +2057,19 @@ keygen 4 0=0;
     	{
     		//echo("dbLink is not blank<br>");
     	}
-    	
+		
+		
     
 		/* setup sql*/
 		$sql = "insert into pattern_set (pattern_set_name, start_date, end_date, status_id, analysis_engine_id, pattern_set_type_id, notes) values (\"$this->name\",\"$this->startDate\",\"$this->endDate\",$this->statusId,$this->analysisEngineId,$this->patternSetTypeId,\"$this->notes\")";
 
 		echo("sql:". $sql. "<br>");
+
+			//log an logentry
+	$theError = new SolarError;
+	$theError->module = "PatternSet::add";
+	$theError->details = "sql:".$sql;
+	$theError->add();
 		
 					
 		//create utility
@@ -2097,7 +2104,11 @@ keygen 4 0=0;
 			//$result = mysql_db_query($theUtility->dbName,"$matchSql") or die ("insert match sql failed");
 			$result = $this->dbLink->query($matchSql);
 			//$result->data_seek(0);
-		
+			//log an logentry
+	$theError = new SolarError;
+	$theError->module = "PatternSet::clearKilowattHourWeight";
+	$theError->details = "clearKilowattHourWeight sql:".$sql;
+	$theError->add();
 		}
     
     }

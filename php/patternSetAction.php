@@ -358,6 +358,7 @@ if ($theButton == "")
 		$thePatternSet->startDate = $_REQUEST['startDate'];
 		$thePatternSet->endDate = $_REQUEST['endDate'];
 		$thePatternSet->statusId = $_REQUEST['statusId'];
+		$thePatternSet->analysisEngineId = $_REQUEST['analysisEngineId'];
 		$thePatternSet->patternSetTypeId = $_REQUEST['patternSetTypeId'];
 		$thePatternSet->notes = $_REQUEST['notes'];
 		
@@ -365,7 +366,9 @@ if ($theButton == "")
 		
 		$thePatternSet->nodes = $_REQUEST['nodes'];
 		
-		//echo("after nodes sizeof:".sizeof($thePatternSet->nodes)."<br>");
+		echo("after nodes sizeof:".sizeof($thePatternSet->nodes)."<br>");
+		echo("thePatternSet->analysisEngineId:".$thePatternSet->analysisEngineId."<br>");
+	
 		
 		//break;
 		

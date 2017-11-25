@@ -78,7 +78,7 @@ class AnalysisEngine {
 
 		if ($displayMode == "selectBox")
 		{
-			echo("<select name='nodeId' size='1'>\n");
+			echo("<select name='analysisEngineId' size='1'>\n");
 			
 			
 		}
