@@ -59,8 +59,8 @@ $emergentProjectPath = "/var/www/html/solarquant/emergent/";
 //$emergentProjectFile = "consumption_bp_nogui_20160321a.proj";
 //with emergent 8
 //$emergentProjectFile = "consumption_bp_nogui_20160321a_convert2.proj";
-//$emergentProjectFile = "consumption_bp_nogui_20160321a_5000epochs_0batches.proj";
-$emergentProjectFile = "consumption_bp_nogui_20160321a_500epochs_0batches.proj";
+$emergentProjectFile = "consumption_bp_nogui_20160321a_5000epochs_0batches.proj";
+//$emergentProjectFile = "consumption_bp_nogui_20160321a_500epochs_0batches.proj";
 $numBatches = "1";
 $emergentLogPath = "/var/www/html/solarquant/emergent/log/";
 $emergentTag = "test1";
