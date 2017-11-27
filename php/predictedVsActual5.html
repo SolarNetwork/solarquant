@@ -252,12 +252,19 @@ svg.append("g")
 require_once('../classes/tc_calendar.php');
 require_once "/var/www/html/solarquant/classes/PatternSet.php";
 
+require_once "/var/www/html/solarquant/classes/ConsumptionPatternSet.php";
+
+$theConsumptionPatternSet = new ConsumptionPatternSet();
+
 // Start the session
 session_start();
 
 //echo("session[startdate]".$_SESSION['startDate']."<br>");
+//echo("REQUEST[startdate]".$_REQUEST['startDate']."<br>");
 
 //echo("session[patternSetId]".$_SESSION['patternSetId']."<br>");
+
+
 
 //exit;
 		
@@ -289,6 +296,11 @@ $_SESSION["startDate"] = $_REQUEST['startDate'];
 $_SESSION["endDate"] = $_REQUEST['endDate'];
 
 		}
+
+        //calc and show STDEV
+        $standardDev = $theConsumptionPatternSet->getStandardDeviation($_SESSION["patternSetId"],$_SESSION['startDate'],$_SESSION['endDate']);
+        //$standardDev = $theConsumptionPatternSet->getStandardDeviation($_SESSION["patternSetId"],$_REQUEST['startDate'],$_REQUEST['endDate']);
+        echo (" Standard Deviation:".$standardDev."<br><br>");
 
 $dateStartPieces = explode("-", $_SESSION["startDate"]);
 $dateEndPieces = explode("-", $_SESSION["endDate"]);
@@ -339,6 +351,18 @@ $myCalendar2->writeScript();
 <input type="submit" value="Submit">
 
 </form>
+
+<?php
+
+// Start the session
+//session_start();
+
+//echo ("<br><br>epoch:".$_SESSION["epoch"]." batch:".$_SESSION["batch"]);
+
+
+
+?>
+
 </body>
 
 

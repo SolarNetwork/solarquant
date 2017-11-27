@@ -402,7 +402,7 @@ class ConsumptionPatternSet {
 		*/
     
     }
-    function getStandardDeviation($patternSetId)
+    function getStandardDeviation($patternSetId,$startDate,$endDate)
     {
 
     	    	//try to get a database connection if there isn't one already open
@@ -419,7 +419,7 @@ class ConsumptionPatternSet {
     	    $sql = "SELECT std(cip.kilowatt_hours_weight - ie.predicted_kilowatt_hours_weight) as standard_deviation FROM `consumption_input_pattern` cip
     	    INNER JOIN inputpattern_extensions ie
     	   ON cip.consumption_input_pattern_id = ie.consumption_input_pattern_id
-    	    where cip.pattern_set_id = ".$patternSetId;
+    	    where cip.pattern_set_id = ".$patternSetId." AND cip.start_datetime >= '".$startDate."' AND cip.end_datetime <= '".$endDate."'";
     	    
     	    //$sql = "SELECT std(kilowatt_hours_weight - predicted_kilowatt_hours_weight) as standard_deviation FROM `consumption_input_pattern` where pattern_set_id = ".$patternSetId;
     	    
