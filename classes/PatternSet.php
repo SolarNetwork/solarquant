@@ -431,11 +431,16 @@ keygen 4 0=0;
     	//this needs to be omitted and we will select all the available data for this node
     	$getWeatherInputRowsSql .= " AND pattern_set_id = ".$this->id;
 
-    	//if this is an actual 
+    	//if this is an actual consumption
     	if ($this->patternSetTypeId == 1)
     	{
     		$getWeatherInputRowsSql .= " AND kilowatt_hours_weight > 0";
-    	}    	
+		}    
+		//if this is an actual generation 
+		elseif ($this->patternSetTypeId == 2)
+		{
+			//$getWeatherInputRowsSql .= " AND kilowatt_hours_weight = 0";
+		}	
     	//if this is a forecast 
     	elseif ($this->patternSetTypeId == 4)
     	{

@@ -1312,22 +1312,29 @@ Widespread Dust  and  Windy
     	  		//is this ConsumptionDatum valid?
     	  
     	  		//using datetime and weather parameters, create 24? weighted decimal values and 1 output value
-    	  		echo("consumptionRow[amps]:".$consumptionRow["amps"]."<br>"); 
-    	  		
-    	  		//filter out the low ones
-    	  		if ($consumptionRow["amps"] > 0.1)
+				  echo("consumptionRow[amps]:".$consumptionRow["amps"]."<br>"); 
+	    	  		
+    	  		//filter out the low ones only if consumption
+				if((($consumptionRow["amps"] > 0.1) && ($this->patternSetTypeId == 1)) || ($this->patternSetTypeId == 2))
     	  		{
-    	  			//get a total
-    	  			$totalAmps = $totalAmps + $consumptionRow["amps"];
-    	  			
-    	  			//add another to validRows
+					//get a total
+					$totalAmps = $totalAmps + $consumptionRow["amps"];
+					  
+					//add another to validRows
     	  			$validRows++;
     	  		
     	  		}
     	  		
     	  		echo("maxAmps:".$maxAmps."<br>");
     	  		echo("totalAmps:".$totalAmps."<br>"); 
-    	  		echo("validRows:".$validRows."<br>"); 
+				echo("validRows:".$validRows."<br>"); 
+				  
+
+				//log an logentry
+				$theError = new SolarError;
+				$theError->module = "ConsumptionPatternSet::generateNNInputWeights";
+				$theError->details = "found ".$validRows." valid rows";
+				$theError->add();
     	  		
     	  		
     	  		if ($validRows > 0)
@@ -1342,7 +1349,13 @@ Widespread Dust  and  Windy
     	  		else
     	  		{
     	  			
-    	  			echo("no valid rows this->kiloWattHoursWeight is zero<br>"); 
+					  echo("no valid rows this->kiloWattHoursWeight is zero<br>"); 
+					  
+					//log an logentry
+					$theError = new SolarError;
+					$theError->module = "ConsumptionPatternSet::generateNNInputWeights";
+					$theError->details = "no valid rows this->kiloWattHoursWeight is zero";
+					$theError->add();
     	  		
     	  		}
     	  
@@ -1354,11 +1367,11 @@ Widespread Dust  and  Windy
     	  	if ($mode == "actual")
     	  	{
     	  		
-    	  		    	  				//log an logentry
-		$theError = new SolarError;
-		$theError->module = "ConsumptionPatternSet::generateNNInputWeights";
-		$theError->details = "about to add() a ConsumptionPatternSet";
-		$theError->add();
+    	  		//log an logentry
+				$theError = new SolarError;
+				$theError->module = "ConsumptionPatternSet::generateNNInputWeights";
+				$theError->details = "about to add() a ConsumptionPatternSet";
+				$theError->add();
    	  	
     	  		//add this datum
     	  		$this->add();
@@ -1367,26 +1380,26 @@ Widespread Dust  and  Windy
     	  	elseif ($mode == "refreshEnergy")
     	  	{
     	  		
-    	  				//log an logentry
-		$theError = new SolarError;
-		$theError->module = "ConsumptionPatternSet::generateNNInputWeights";
-		$theError->details = "about to prepareTrialName";
-		$theError->add();
+				//log an logentry
+				$theError = new SolarError;
+				$theError->module = "ConsumptionPatternSet::generateNNInputWeights";
+				$theError->details = "about to prepareTrialName";
+				$theError->add();
     	  	
-    	  		//set the trialName property
-    	  		 $this->prepareTrialName();
-    	  		 
-    	  	//log an logentry
-		$theError = new SolarError;
-		$theError->module = "ConsumptionPatternSet::generateNNInputWeights";
-		$theError->details = "about to updateKilowattHoursWeight";
-		$theError->add();
-    	  		
-    	  		//update this trial's kiloWattHoursWeight
-    	  		$this->updateKilowattHoursWeight();
+				//set the trialName property
+				$this->prepareTrialName();
+						
+				//log an logentry
+				$theError = new SolarError;
+				$theError->module = "ConsumptionPatternSet::generateNNInputWeights";
+				$theError->details = "about to updateKilowattHoursWeight";
+				$theError->add();
+						
+				//update this trial's kiloWattHoursWeight
+				$this->updateKilowattHoursWeight();
     	  		
     	  	
-    	  	}
+    	  	} //refresjEnergy
     	  
     	  	} //only if mode = actual or refreshEnergy
     	  	
