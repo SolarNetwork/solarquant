@@ -664,7 +664,9 @@ keygen 4 0=0;
 		//just power
 		elseif ($this->patternSetTypeId == 2) 
 		{
-			$this->getDatumFromSolarNet("Power");
+			//TODO check this out
+			//$this->getDatumFromSolarNet("Power");
+			$this->getDatumFromSolarNet("Consumption");
 		}
 		//both consumption and power
 		elseif ($this->patternSetTypeId == 3) 

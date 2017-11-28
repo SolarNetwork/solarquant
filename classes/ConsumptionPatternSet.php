@@ -1199,7 +1199,7 @@ Widespread Dust  and  Windy
 		    	    			//instantiate object
 		$theError = new SolarError;
 		$theError->module = "ConsumptionPatternSet::generateNNInputWeights";
-		$theError->details = "theNode->maxAmps:".$theNode->maxAmps;
+		$theError->details = "theNode->maxAmps:".$theNode->maxAmps." for sourceId:";
 		$theError->add();
     	  
     	//loop through all valid intervals of 30-min weatherdatum

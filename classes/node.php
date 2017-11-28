@@ -104,7 +104,7 @@ class Node
     		//echo("dbLink is not blank<br>");
     	}
     	
-    	    	// setup sql
+    	// TODO make sure we are getting max amps for the right sourceId
 		$sql = "select max(amps) as max_amps from `consumption_datum` where node_id = ".$this->id;
 		
 		echo("node getMaxAmps sql:". $sql. "<br>");

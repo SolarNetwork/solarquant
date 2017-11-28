@@ -226,12 +226,17 @@ if ($theFilePointer == false)
 				$theError->add();
 				
 				//if we're dealing with a consumption type patternSet
-				if ($theConsumptionPatternSet->patternSetTypeId = 1)
+				if ($theConsumptionPatternSet->patternSetTypeId == 1)
+				{
+					$weightsMode = "actual";
+				}
+				//if we're dealing with a generation type patternSet
+				elseif ($theConsumptionPatternSet->patternSetTypeId == 2)
 				{
 					$weightsMode = "actual";
 				}
 				//if we're dealing with a forecast PatternSet
-				elseif($theConsumptionPatternSet->patternSetTypeId = 4)
+				elseif($theConsumptionPatternSet->patternSetTypeId == 4)
 				{
 					$weightsMode = "virtual";
 				}
@@ -255,6 +260,9 @@ if ($theFilePointer == false)
 				$theError->module = "cron_createTrainingFiles";
 				$theError->details = "generated NN weights for patternset ".$thePatternSet->id;
 				$theError->add();
+
+				//TODO
+				// This is where a new thread should be created that prepares the training file
 				
 				//debug
 				echo "after generateNNInputWeights :".$theConsumptionPatternSet->patternSetId."\n";
@@ -286,7 +294,7 @@ if ($theFilePointer == false)
 					$thePatternSet->writeTrainingFile($fileContents);
 					
 					//if we're dealing with a consumption type patternSet
-					if ($thePatternSet->patternSetTypeId == 1)
+					if (($thePatternSet->patternSetTypeId == 1) | ($thePatternSet->patternSetTypeId == 2))
 					{
 						//advance the status to be ready for training
 						$thePatternSet->statusId = 4;
