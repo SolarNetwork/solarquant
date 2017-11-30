@@ -78,7 +78,7 @@ else
 	<?php
 	
 
-	    		//echo("before require engine<br>");
+	    		//echo("before require enginetest<br>");
 
 		require_once('../classes/AnalysisEngine.php');
 
