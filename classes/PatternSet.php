@@ -604,13 +604,21 @@ keygen 4 0=0;
 	$theError->module = "PatternSet::getMyDatum";
 	$theError->details = "for patternset:".$this->id." patternSetTypeId:".$this->patternSetTypeId." and statusId:".$this->statusId ;
 	$theError->add();
-		
-
+	
+	if ($this->analysisEngineId == 1)
+	{
+			//call python script
+	}
+	elseif ($this->analysisEngineId == 2)
+	{
 
   	//if the status is 1 - brand new empty but flagged for processing
   	if ($this->statusId == 1) 
   	{
-  	
+	  
+		
+
+
   		
   	  	//if the type is 1,2,3
   	  	if ( ($this->patternSetTypeId == 1) | ($this->patternSetTypeId == 2) | ($this->patternSetTypeId == 3) )
@@ -736,6 +744,8 @@ keygen 4 0=0;
 
  
 	} //statusId is 8
+
+} //if analysisEngineId == 2
   	  
 	
   }
