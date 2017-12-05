@@ -890,6 +890,14 @@ function daysDifference($startDate, $endDate)
     	    elseif ($status == "inProcess")
     	    {
     	    	  $statusId = 1;  
+			}
+			elseif ($status == "dataDownloaded")
+    	    {
+    	    	  $statusId = 2;  
+			}
+			elseif ($status == "emergentDataNormalised")
+    	    {
+    	    	  $statusId = 3;  
     	    }
     	    elseif ($status == "trainingFileCreated")
     	    {
@@ -945,6 +953,13 @@ function daysDifference($startDate, $endDate)
 			{
 			
 				$sql.= " AND pnm.node_id = ".$this->id." AND p.status_id = ".$statusId;
+
+				if ( ($status == "emergentDataNormalised") | ($status == "trainingFileCreated") | ($status == "completedSuccessfully") )
+				{
+					//make sure we only look at emergent cases  TODO centralise variables here
+					$sql.= " AND p.analysis_engine_id = 2 ";
+				}
+
 				
 				//if we're looking for futureForecast patternSets
 				if ($status == "futureForecast")
@@ -959,8 +974,8 @@ function daysDifference($startDate, $endDate)
 		}
 		
 		
-		
-		if (($status == "trainingFileCreated") | ($status == "inProcess") | ($status == "completedSuccessfully") )
+		//added to support multiple status
+		if (($status == "trainingFileCreated") | ($status == "inProcess") | ($status == "dataDownloaded") | ($status == "emergentDataNormalised") | ($status == "completedSuccessfully") )
 		{
 			$sql .=	" ORDER BY pnm.pattern_set_id DESC ";
 		}
