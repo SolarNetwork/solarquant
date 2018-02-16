@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="false" key="isRegEx"/>
+		<item value="delete" key="selection"/>
+		<item value="false" key="casesensitive"/>
+		<item value="false" key="incremental"/>
+		<item value="true" key="wrap"/>
+		<item value="false" key="wholeword"/>
+		<list key="findhistory">
+			<item value="delete"/>
+			<item value="delete ("/>
+			<item value="delete("/>
+			<item value="add("/>
+			<item value="listall"/>
+			<item value="list"/>
+			<item value="== list"/>
+			<item value="==list"/>
+			<item value="list("/>
+			<item value="add"/>
+			<item value="error"/>
+			<item value="err"/>
+			<item value="data2"/>
+			<item value="predicted"/>
+			<item value="d.price"/>
+		</list>
+		<list key="replacehistory">
+			<item value="d.wattHours"/>
+			<item value="d.created"/>
+			<item value="data2"/>
+			<item value="error2"/>
+			<item value="created"/>
+			<item value="dCreated"/>
+			<item value=".wattHours"/>
+			<item value=".created"/>
+			<item value=""/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="358" key="DIALOG_WIDTH"/>
+		<item value="1|Ubuntu|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
+		<item value="454" key="DIALOG_HEIGHT"/>
+		<item value="1274" key="DIALOG_X_ORIGIN"/>
+		<item value="260" key="DIALOG_Y_ORIGIN"/>
+	</section>
+</section>

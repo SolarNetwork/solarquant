@@ -1,0 +1,542 @@
+!SESSION 2017-12-07 09:17:48.025 -----------------------------------------------
+eclipse.buildId=4.7.0.I20170612-0950
+java.version=1.8.0_151
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_NZ
+Framework arguments:  -product org.eclipse.epp.package.php.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.php.product
+
+This is a continuation of log file /var/www/html/solarquant/php/.metadata/.bak_0.log
+Created Time: 2017-12-07 15:14:46.941
+
+!ENTRY org.eclipse.php.core 4 4 2017-12-07 15:14:46.941
+!MESSAGE Resource '/ /addPatternSetForm.php' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/ /addPatternSetForm.php' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:335)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:209)
+	at org.eclipse.core.internal.resources.Resource.createMarker(Resource.java:696)
+	at org.eclipse.php.internal.core.builder.TaskTagBuildParticipantFactory$TaskTagBuildParticipantParticipant.createMarker(TaskTagBuildParticipantFactory.java:172)
+	at org.eclipse.php.internal.core.builder.TaskTagBuildParticipantFactory$TaskTagBuildParticipantParticipant.reportTask(TaskTagBuildParticipantFactory.java:156)
+	at org.eclipse.php.internal.core.builder.TaskTagBuildParticipantFactory$TaskTagBuildParticipantParticipant.build(TaskTagBuildParticipantFactory.java:281)
+	at org.eclipse.dltk.internal.core.ReconcileBuilder.run(ReconcileBuilder.java:108)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.dltk.internal.core.ReconcileBuilder.build(ReconcileBuilder.java:85)
+	at org.eclipse.dltk.internal.core.AbstractSourceModule.buildStructure(AbstractSourceModule.java:540)
+	at org.eclipse.dltk.internal.core.Openable.generateInfos(Openable.java:197)
+	at org.eclipse.dltk.internal.core.ModelElement.openWhenClosed(ModelElement.java:199)
+	at org.eclipse.dltk.internal.core.SourceModule.makeConsistent(SourceModule.java:253)
+	at org.eclipse.dltk.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:77)
+	at org.eclipse.dltk.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:57)
+	at org.eclipse.dltk.internal.core.ModelOperation.run(ModelOperation.java:703)
+	at org.eclipse.dltk.internal.core.ModelOperation.runOperation(ModelOperation.java:769)
+	at org.eclipse.dltk.internal.core.SourceModule.reconcile(SourceModule.java:301)
+	at org.eclipse.php.internal.ui.editor.validation.PHPReconcilingStrategy.reconcile(PHPReconcilingStrategy.java:150)
+	at org.eclipse.php.internal.ui.editor.validation.PHPReconcilingStrategy.access$0(PHPReconcilingStrategy.java:138)
+	at org.eclipse.php.internal.ui.editor.validation.PHPReconcilingStrategy$2.run(PHPReconcilingStrategy.java:216)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.php.internal.ui.editor.validation.PHPReconcilingStrategy.validate(PHPReconcilingStrategy.java:213)
+	at org.eclipse.php.internal.ui.editor.validation.PHPReconcilingStrategy.validate(PHPReconcilingStrategy.java:190)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.validate(ReconcileStepForValidator.java:250)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.reconcileModel(ReconcileStepForValidator.java:208)
+	at org.eclipse.jface.text.reconciler.AbstractReconcileStep.reconcile(AbstractReconcileStep.java:89)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ValidatorStrategy.reconcile(ValidatorStrategy.java:269)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DocumentRegionProcessor.process(DocumentRegionProcessor.java:321)
+	at org.eclipse.wst.sse.ui.internal.reconcile.StructuredRegionProcessor.process(StructuredRegionProcessor.java:258)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DirtyRegionProcessor$BackgroundThread.run(DirtyRegionProcessor.java:691)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2017-12-07 15:14:46.941
+!MESSAGE Resource '/ /addPatternSetForm.php' does not exist.
+
+!ENTRY org.eclipse.php.core 4 4 2017-12-07 15:15:08.461
+!MESSAGE Resource '/ /addPatternSetForm.php' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/ /addPatternSetForm.php' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:335)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:209)
+	at org.eclipse.core.internal.resources.Resource.createMarker(Resource.java:696)
+	at org.eclipse.php.internal.core.builder.TaskTagBuildParticipantFactory$TaskTagBuildParticipantParticipant.createMarker(TaskTagBuildParticipantFactory.java:172)
+	at org.eclipse.php.internal.core.builder.TaskTagBuildParticipantFactory$TaskTagBuildParticipantParticipant.reportTask(TaskTagBuildParticipantFactory.java:156)
+	at org.eclipse.php.internal.core.builder.TaskTagBuildParticipantFactory$TaskTagBuildParticipantParticipant.build(TaskTagBuildParticipantFactory.java:281)
+	at org.eclipse.dltk.internal.core.ReconcileBuilder.run(ReconcileBuilder.java:108)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.dltk.internal.core.ReconcileBuilder.build(ReconcileBuilder.java:85)
+	at org.eclipse.dltk.internal.core.AbstractSourceModule.buildStructure(AbstractSourceModule.java:540)
+	at org.eclipse.dltk.internal.core.Openable.generateInfos(Openable.java:197)
+	at org.eclipse.dltk.internal.core.ModelElement.openWhenClosed(ModelElement.java:199)
+	at org.eclipse.dltk.internal.core.SourceModule.makeConsistent(SourceModule.java:253)
+	at org.eclipse.dltk.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:77)
+	at org.eclipse.dltk.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:57)
+	at org.eclipse.dltk.internal.core.ModelOperation.run(ModelOperation.java:703)
+	at org.eclipse.dltk.internal.core.ModelOperation.runOperation(ModelOperation.java:769)
+	at org.eclipse.dltk.internal.core.SourceModule.reconcile(SourceModule.java:301)
+	at org.eclipse.php.internal.ui.editor.validation.PHPReconcilingStrategy.reconcile(PHPReconcilingStrategy.java:150)
+	at org.eclipse.php.internal.ui.editor.validation.PHPReconcilingStrategy.access$0(PHPReconcilingStrategy.java:138)
+	at org.eclipse.php.internal.ui.editor.validation.PHPReconcilingStrategy$2.run(PHPReconcilingStrategy.java:216)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.php.internal.ui.editor.validation.PHPReconcilingStrategy.validate(PHPReconcilingStrategy.java:213)
+	at org.eclipse.php.internal.ui.editor.validation.PHPReconcilingStrategy.validate(PHPReconcilingStrategy.java:190)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.validate(ReconcileStepForValidator.java:250)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.reconcileModel(ReconcileStepForValidator.java:208)
+	at org.eclipse.jface.text.reconciler.AbstractReconcileStep.reconcile(AbstractReconcileStep.java:89)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ValidatorStrategy.reconcile(ValidatorStrategy.java:269)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DocumentRegionProcessor.process(DocumentRegionProcessor.java:321)
+	at org.eclipse.wst.sse.ui.internal.reconcile.StructuredRegionProcessor.process(StructuredRegionProcessor.java:258)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DirtyRegionProcessor$BackgroundThread.run(DirtyRegionProcessor.java:691)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2017-12-07 15:15:08.461
+!MESSAGE Resource '/ /addPatternSetForm.php' does not exist.
+
+!ENTRY org.eclipse.php.core 4 4 2017-12-07 15:15:09.978
+!MESSAGE Resource '/ /addPatternSetForm.php' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/ /addPatternSetForm.php' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:335)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:209)
+	at org.eclipse.core.internal.resources.Resource.createMarker(Resource.java:696)
+	at org.eclipse.php.internal.core.builder.TaskTagBuildParticipantFactory$TaskTagBuildParticipantParticipant.createMarker(TaskTagBuildParticipantFactory.java:172)
+	at org.eclipse.php.internal.core.builder.TaskTagBuildParticipantFactory$TaskTagBuildParticipantParticipant.reportTask(TaskTagBuildParticipantFactory.java:156)
+	at org.eclipse.php.internal.core.builder.TaskTagBuildParticipantFactory$TaskTagBuildParticipantParticipant.build(TaskTagBuildParticipantFactory.java:281)
+	at org.eclipse.dltk.internal.core.ReconcileBuilder.run(ReconcileBuilder.java:108)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.dltk.internal.core.ReconcileBuilder.build(ReconcileBuilder.java:85)
+	at org.eclipse.dltk.internal.core.AbstractSourceModule.buildStructure(AbstractSourceModule.java:540)
+	at org.eclipse.dltk.internal.core.Openable.generateInfos(Openable.java:197)
+	at org.eclipse.dltk.internal.core.ModelElement.openWhenClosed(ModelElement.java:199)
+	at org.eclipse.dltk.internal.core.SourceModule.makeConsistent(SourceModule.java:253)
+	at org.eclipse.dltk.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:77)
+	at org.eclipse.dltk.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:57)
+	at org.eclipse.dltk.internal.core.ModelOperation.run(ModelOperation.java:703)
+	at org.eclipse.dltk.internal.core.ModelOperation.runOperation(ModelOperation.java:769)
+	at org.eclipse.dltk.internal.core.SourceModule.reconcile(SourceModule.java:301)
+	at org.eclipse.php.internal.ui.editor.validation.PHPReconcilingStrategy.reconcile(PHPReconcilingStrategy.java:150)
+	at org.eclipse.php.internal.ui.editor.validation.PHPReconcilingStrategy.access$0(PHPReconcilingStrategy.java:138)
+	at org.eclipse.php.internal.ui.editor.validation.PHPReconcilingStrategy$2.run(PHPReconcilingStrategy.java:216)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.php.internal.ui.editor.validation.PHPReconcilingStrategy.validate(PHPReconcilingStrategy.java:213)
+	at org.eclipse.php.internal.ui.editor.validation.PHPReconcilingStrategy.validate(PHPReconcilingStrategy.java:190)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.validate(ReconcileStepForValidator.java:250)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.reconcileModel(ReconcileStepForValidator.java:208)
+	at org.eclipse.jface.text.reconciler.AbstractReconcileStep.reconcile(AbstractReconcileStep.java:89)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ValidatorStrategy.reconcile(ValidatorStrategy.java:269)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DocumentRegionProcessor.process(DocumentRegionProcessor.java:321)
+	at org.eclipse.wst.sse.ui.internal.reconcile.StructuredRegionProcessor.process(StructuredRegionProcessor.java:258)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DirtyRegionProcessor$BackgroundThread.run(DirtyRegionProcessor.java:691)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2017-12-07 15:15:09.978
+!MESSAGE Resource '/ /addPatternSetForm.php' does not exist.
+
+!ENTRY org.eclipse.php.core 4 4 2017-12-07 15:15:51.999
+!MESSAGE Resource '/ /addPatternSetForm.php' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/ /addPatternSetForm.php' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:335)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:209)
+	at org.eclipse.core.internal.resources.Resource.createMarker(Resource.java:696)
+	at org.eclipse.php.internal.core.builder.TaskTagBuildParticipantFactory$TaskTagBuildParticipantParticipant.createMarker(TaskTagBuildParticipantFactory.java:172)
+	at org.eclipse.php.internal.core.builder.TaskTagBuildParticipantFactory$TaskTagBuildParticipantParticipant.reportTask(TaskTagBuildParticipantFactory.java:156)
+	at org.eclipse.php.internal.core.builder.TaskTagBuildParticipantFactory$TaskTagBuildParticipantParticipant.build(TaskTagBuildParticipantFactory.java:281)
+	at org.eclipse.dltk.internal.core.ReconcileBuilder.run(ReconcileBuilder.java:108)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.dltk.internal.core.ReconcileBuilder.build(ReconcileBuilder.java:85)
+	at org.eclipse.dltk.internal.core.AbstractSourceModule.buildStructure(AbstractSourceModule.java:540)
+	at org.eclipse.dltk.internal.core.Openable.generateInfos(Openable.java:197)
+	at org.eclipse.dltk.internal.core.ModelElement.openWhenClosed(ModelElement.java:199)
+	at org.eclipse.dltk.internal.core.SourceModule.makeConsistent(SourceModule.java:253)
+	at org.eclipse.dltk.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:77)
+	at org.eclipse.dltk.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:57)
+	at org.eclipse.dltk.internal.core.ModelOperation.run(ModelOperation.java:703)
+	at org.eclipse.dltk.internal.core.ModelOperation.runOperation(ModelOperation.java:769)
+	at org.eclipse.dltk.internal.core.SourceModule.reconcile(SourceModule.java:301)
+	at org.eclipse.php.internal.ui.editor.validation.PHPReconcilingStrategy.reconcile(PHPReconcilingStrategy.java:150)
+	at org.eclipse.php.internal.ui.editor.validation.PHPReconcilingStrategy.access$0(PHPReconcilingStrategy.java:138)
+	at org.eclipse.php.internal.ui.editor.validation.PHPReconcilingStrategy$2.run(PHPReconcilingStrategy.java:216)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.php.internal.ui.editor.validation.PHPReconcilingStrategy.validate(PHPReconcilingStrategy.java:213)
+	at org.eclipse.php.internal.ui.editor.validation.PHPReconcilingStrategy.validate(PHPReconcilingStrategy.java:190)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.validate(ReconcileStepForValidator.java:250)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.reconcileModel(ReconcileStepForValidator.java:208)
+	at org.eclipse.jface.text.reconciler.AbstractReconcileStep.reconcile(AbstractReconcileStep.java:89)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ValidatorStrategy.reconcile(ValidatorStrategy.java:269)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DocumentRegionProcessor.process(DocumentRegionProcessor.java:321)
+	at org.eclipse.wst.sse.ui.internal.reconcile.StructuredRegionProcessor.process(StructuredRegionProcessor.java:258)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DirtyRegionProcessor$BackgroundThread.run(DirtyRegionProcessor.java:691)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2017-12-07 15:15:52.000
+!MESSAGE Resource '/ /addPatternSetForm.php' does not exist.
+
+!ENTRY org.eclipse.php.core 4 4 2017-12-07 15:15:53.007
+!MESSAGE Resource '/ /addPatternSetForm.php' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/ /addPatternSetForm.php' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:335)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:209)
+	at org.eclipse.core.internal.resources.Resource.createMarker(Resource.java:696)
+	at org.eclipse.php.internal.core.builder.TaskTagBuildParticipantFactory$TaskTagBuildParticipantParticipant.createMarker(TaskTagBuildParticipantFactory.java:172)
+	at org.eclipse.php.internal.core.builder.TaskTagBuildParticipantFactory$TaskTagBuildParticipantParticipant.reportTask(TaskTagBuildParticipantFactory.java:156)
+	at org.eclipse.php.internal.core.builder.TaskTagBuildParticipantFactory$TaskTagBuildParticipantParticipant.build(TaskTagBuildParticipantFactory.java:281)
+	at org.eclipse.dltk.internal.core.ReconcileBuilder.run(ReconcileBuilder.java:108)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.dltk.internal.core.ReconcileBuilder.build(ReconcileBuilder.java:85)
+	at org.eclipse.dltk.internal.core.AbstractSourceModule.buildStructure(AbstractSourceModule.java:540)
+	at org.eclipse.dltk.internal.core.Openable.generateInfos(Openable.java:197)
+	at org.eclipse.dltk.internal.core.ModelElement.openWhenClosed(ModelElement.java:199)
+	at org.eclipse.dltk.internal.core.SourceModule.makeConsistent(SourceModule.java:253)
+	at org.eclipse.dltk.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:77)
+	at org.eclipse.dltk.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:57)
+	at org.eclipse.dltk.internal.core.ModelOperation.run(ModelOperation.java:703)
+	at org.eclipse.dltk.internal.core.ModelOperation.runOperation(ModelOperation.java:769)
+	at org.eclipse.dltk.internal.core.SourceModule.reconcile(SourceModule.java:301)
+	at org.eclipse.php.internal.ui.editor.validation.PHPReconcilingStrategy.reconcile(PHPReconcilingStrategy.java:150)
+	at org.eclipse.php.internal.ui.editor.validation.PHPReconcilingStrategy.access$0(PHPReconcilingStrategy.java:138)
+	at org.eclipse.php.internal.ui.editor.validation.PHPReconcilingStrategy$2.run(PHPReconcilingStrategy.java:216)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.php.internal.ui.editor.validation.PHPReconcilingStrategy.validate(PHPReconcilingStrategy.java:213)
+	at org.eclipse.php.internal.ui.editor.validation.PHPReconcilingStrategy.validate(PHPReconcilingStrategy.java:190)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.validate(ReconcileStepForValidator.java:250)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.reconcileModel(ReconcileStepForValidator.java:208)
+	at org.eclipse.jface.text.reconciler.AbstractReconcileStep.reconcile(AbstractReconcileStep.java:89)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ValidatorStrategy.reconcile(ValidatorStrategy.java:269)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DocumentRegionProcessor.process(DocumentRegionProcessor.java:321)
+	at org.eclipse.wst.sse.ui.internal.reconcile.StructuredRegionProcessor.process(StructuredRegionProcessor.java:258)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DirtyRegionProcessor$BackgroundThread.run(DirtyRegionProcessor.java:691)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2017-12-07 15:15:53.008
+!MESSAGE Resource '/ /addPatternSetForm.php' does not exist.
+
+!ENTRY org.eclipse.php.core 4 4 2017-12-07 15:15:54.014
+!MESSAGE Resource '/ /addPatternSetForm.php' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/ /addPatternSetForm.php' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:335)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:209)
+	at org.eclipse.core.internal.resources.Resource.createMarker(Resource.java:696)
+	at org.eclipse.php.internal.core.builder.TaskTagBuildParticipantFactory$TaskTagBuildParticipantParticipant.createMarker(TaskTagBuildParticipantFactory.java:172)
+	at org.eclipse.php.internal.core.builder.TaskTagBuildParticipantFactory$TaskTagBuildParticipantParticipant.reportTask(TaskTagBuildParticipantFactory.java:156)
+	at org.eclipse.php.internal.core.builder.TaskTagBuildParticipantFactory$TaskTagBuildParticipantParticipant.build(TaskTagBuildParticipantFactory.java:281)
+	at org.eclipse.dltk.internal.core.ReconcileBuilder.run(ReconcileBuilder.java:108)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.dltk.internal.core.ReconcileBuilder.build(ReconcileBuilder.java:85)
+	at org.eclipse.dltk.internal.core.AbstractSourceModule.buildStructure(AbstractSourceModule.java:540)
+	at org.eclipse.dltk.internal.core.Openable.generateInfos(Openable.java:197)
+	at org.eclipse.dltk.internal.core.ModelElement.openWhenClosed(ModelElement.java:199)
+	at org.eclipse.dltk.internal.core.SourceModule.makeConsistent(SourceModule.java:253)
+	at org.eclipse.dltk.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:77)
+	at org.eclipse.dltk.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:57)
+	at org.eclipse.dltk.internal.core.ModelOperation.run(ModelOperation.java:703)
+	at org.eclipse.dltk.internal.core.ModelOperation.runOperation(ModelOperation.java:769)
+	at org.eclipse.dltk.internal.core.SourceModule.reconcile(SourceModule.java:301)
+	at org.eclipse.php.internal.ui.editor.validation.PHPReconcilingStrategy.reconcile(PHPReconcilingStrategy.java:150)
+	at org.eclipse.php.internal.ui.editor.validation.PHPReconcilingStrategy.access$0(PHPReconcilingStrategy.java:138)
+	at org.eclipse.php.internal.ui.editor.validation.PHPReconcilingStrategy$2.run(PHPReconcilingStrategy.java:216)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.php.internal.ui.editor.validation.PHPReconcilingStrategy.validate(PHPReconcilingStrategy.java:213)
+	at org.eclipse.php.internal.ui.editor.validation.PHPReconcilingStrategy.validate(PHPReconcilingStrategy.java:190)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.validate(ReconcileStepForValidator.java:250)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.reconcileModel(ReconcileStepForValidator.java:208)
+	at org.eclipse.jface.text.reconciler.AbstractReconcileStep.reconcile(AbstractReconcileStep.java:89)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ValidatorStrategy.reconcile(ValidatorStrategy.java:269)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DocumentRegionProcessor.process(DocumentRegionProcessor.java:321)
+	at org.eclipse.wst.sse.ui.internal.reconcile.StructuredRegionProcessor.process(StructuredRegionProcessor.java:258)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DirtyRegionProcessor$BackgroundThread.run(DirtyRegionProcessor.java:691)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2017-12-07 15:15:54.015
+!MESSAGE Resource '/ /addPatternSetForm.php' does not exist.
+
+!ENTRY org.eclipse.php.core 4 4 2017-12-07 15:15:56.518
+!MESSAGE Resource '/ /addPatternSetForm.php' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/ /addPatternSetForm.php' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:335)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:209)
+	at org.eclipse.core.internal.resources.Resource.createMarker(Resource.java:696)
+	at org.eclipse.php.internal.core.builder.TaskTagBuildParticipantFactory$TaskTagBuildParticipantParticipant.createMarker(TaskTagBuildParticipantFactory.java:172)
+	at org.eclipse.php.internal.core.builder.TaskTagBuildParticipantFactory$TaskTagBuildParticipantParticipant.reportTask(TaskTagBuildParticipantFactory.java:156)
+	at org.eclipse.php.internal.core.builder.TaskTagBuildParticipantFactory$TaskTagBuildParticipantParticipant.build(TaskTagBuildParticipantFactory.java:281)
+	at org.eclipse.dltk.internal.core.ReconcileBuilder.run(ReconcileBuilder.java:108)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.dltk.internal.core.ReconcileBuilder.build(ReconcileBuilder.java:85)
+	at org.eclipse.dltk.internal.core.AbstractSourceModule.buildStructure(AbstractSourceModule.java:540)
+	at org.eclipse.dltk.internal.core.Openable.generateInfos(Openable.java:197)
+	at org.eclipse.dltk.internal.core.ModelElement.openWhenClosed(ModelElement.java:199)
+	at org.eclipse.dltk.internal.core.SourceModule.makeConsistent(SourceModule.java:253)
+	at org.eclipse.dltk.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:77)
+	at org.eclipse.dltk.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:57)
+	at org.eclipse.dltk.internal.core.ModelOperation.run(ModelOperation.java:703)
+	at org.eclipse.dltk.internal.core.ModelOperation.runOperation(ModelOperation.java:769)
+	at org.eclipse.dltk.internal.core.SourceModule.reconcile(SourceModule.java:301)
+	at org.eclipse.php.internal.ui.editor.validation.PHPReconcilingStrategy.reconcile(PHPReconcilingStrategy.java:150)
+	at org.eclipse.php.internal.ui.editor.validation.PHPReconcilingStrategy.access$0(PHPReconcilingStrategy.java:138)
+	at org.eclipse.php.internal.ui.editor.validation.PHPReconcilingStrategy$2.run(PHPReconcilingStrategy.java:216)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.php.internal.ui.editor.validation.PHPReconcilingStrategy.validate(PHPReconcilingStrategy.java:213)
+	at org.eclipse.php.internal.ui.editor.validation.PHPReconcilingStrategy.validate(PHPReconcilingStrategy.java:190)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.validate(ReconcileStepForValidator.java:250)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.reconcileModel(ReconcileStepForValidator.java:208)
+	at org.eclipse.jface.text.reconciler.AbstractReconcileStep.reconcile(AbstractReconcileStep.java:89)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ValidatorStrategy.reconcile(ValidatorStrategy.java:269)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DocumentRegionProcessor.process(DocumentRegionProcessor.java:321)
+	at org.eclipse.wst.sse.ui.internal.reconcile.StructuredRegionProcessor.process(StructuredRegionProcessor.java:258)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DirtyRegionProcessor$BackgroundThread.run(DirtyRegionProcessor.java:691)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2017-12-07 15:15:56.519
+!MESSAGE Resource '/ /addPatternSetForm.php' does not exist.
+
+!ENTRY org.eclipse.php.core 4 4 2017-12-07 15:16:44.041
+!MESSAGE Resource '/ /addPatternSetForm.php' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/ /addPatternSetForm.php' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:335)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:209)
+	at org.eclipse.core.internal.resources.Resource.createMarker(Resource.java:696)
+	at org.eclipse.php.internal.core.builder.TaskTagBuildParticipantFactory$TaskTagBuildParticipantParticipant.createMarker(TaskTagBuildParticipantFactory.java:172)
+	at org.eclipse.php.internal.core.builder.TaskTagBuildParticipantFactory$TaskTagBuildParticipantParticipant.reportTask(TaskTagBuildParticipantFactory.java:156)
+	at org.eclipse.php.internal.core.builder.TaskTagBuildParticipantFactory$TaskTagBuildParticipantParticipant.build(TaskTagBuildParticipantFactory.java:281)
+	at org.eclipse.dltk.internal.core.ReconcileBuilder.run(ReconcileBuilder.java:108)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.dltk.internal.core.ReconcileBuilder.build(ReconcileBuilder.java:85)
+	at org.eclipse.dltk.internal.core.AbstractSourceModule.buildStructure(AbstractSourceModule.java:540)
+	at org.eclipse.dltk.internal.core.Openable.generateInfos(Openable.java:197)
+	at org.eclipse.dltk.internal.core.ModelElement.openWhenClosed(ModelElement.java:199)
+	at org.eclipse.dltk.internal.core.SourceModule.makeConsistent(SourceModule.java:253)
+	at org.eclipse.dltk.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:77)
+	at org.eclipse.dltk.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:57)
+	at org.eclipse.dltk.internal.core.ModelOperation.run(ModelOperation.java:703)
+	at org.eclipse.dltk.internal.core.ModelOperation.runOperation(ModelOperation.java:769)
+	at org.eclipse.dltk.internal.core.SourceModule.reconcile(SourceModule.java:301)
+	at org.eclipse.php.internal.ui.editor.validation.PHPReconcilingStrategy.reconcile(PHPReconcilingStrategy.java:150)
+	at org.eclipse.php.internal.ui.editor.validation.PHPReconcilingStrategy.access$0(PHPReconcilingStrategy.java:138)
+	at org.eclipse.php.internal.ui.editor.validation.PHPReconcilingStrategy$2.run(PHPReconcilingStrategy.java:216)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.php.internal.ui.editor.validation.PHPReconcilingStrategy.validate(PHPReconcilingStrategy.java:213)
+	at org.eclipse.php.internal.ui.editor.validation.PHPReconcilingStrategy.validate(PHPReconcilingStrategy.java:190)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.validate(ReconcileStepForValidator.java:250)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.reconcileModel(ReconcileStepForValidator.java:208)
+	at org.eclipse.jface.text.reconciler.AbstractReconcileStep.reconcile(AbstractReconcileStep.java:89)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ValidatorStrategy.reconcile(ValidatorStrategy.java:269)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DocumentRegionProcessor.process(DocumentRegionProcessor.java:321)
+	at org.eclipse.wst.sse.ui.internal.reconcile.StructuredRegionProcessor.process(StructuredRegionProcessor.java:258)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DirtyRegionProcessor$BackgroundThread.run(DirtyRegionProcessor.java:691)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2017-12-07 15:16:44.041
+!MESSAGE Resource '/ /addPatternSetForm.php' does not exist.
+
+!ENTRY org.eclipse.php.core 4 4 2017-12-07 15:16:49.553
+!MESSAGE Resource '/ /addPatternSetForm.php' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/ /addPatternSetForm.php' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:335)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:209)
+	at org.eclipse.core.internal.resources.Resource.createMarker(Resource.java:696)
+	at org.eclipse.php.internal.core.builder.TaskTagBuildParticipantFactory$TaskTagBuildParticipantParticipant.createMarker(TaskTagBuildParticipantFactory.java:172)
+	at org.eclipse.php.internal.core.builder.TaskTagBuildParticipantFactory$TaskTagBuildParticipantParticipant.reportTask(TaskTagBuildParticipantFactory.java:156)
+	at org.eclipse.php.internal.core.builder.TaskTagBuildParticipantFactory$TaskTagBuildParticipantParticipant.build(TaskTagBuildParticipantFactory.java:281)
+	at org.eclipse.dltk.internal.core.ReconcileBuilder.run(ReconcileBuilder.java:108)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.dltk.internal.core.ReconcileBuilder.build(ReconcileBuilder.java:85)
+	at org.eclipse.dltk.internal.core.AbstractSourceModule.buildStructure(AbstractSourceModule.java:540)
+	at org.eclipse.dltk.internal.core.Openable.generateInfos(Openable.java:197)
+	at org.eclipse.dltk.internal.core.ModelElement.openWhenClosed(ModelElement.java:199)
+	at org.eclipse.dltk.internal.core.SourceModule.makeConsistent(SourceModule.java:253)
+	at org.eclipse.dltk.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:77)
+	at org.eclipse.dltk.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:57)
+	at org.eclipse.dltk.internal.core.ModelOperation.run(ModelOperation.java:703)
+	at org.eclipse.dltk.internal.core.ModelOperation.runOperation(ModelOperation.java:769)
+	at org.eclipse.dltk.internal.core.SourceModule.reconcile(SourceModule.java:301)
+	at org.eclipse.php.internal.ui.editor.validation.PHPReconcilingStrategy.reconcile(PHPReconcilingStrategy.java:150)
+	at org.eclipse.php.internal.ui.editor.validation.PHPReconcilingStrategy.access$0(PHPReconcilingStrategy.java:138)
+	at org.eclipse.php.internal.ui.editor.validation.PHPReconcilingStrategy$2.run(PHPReconcilingStrategy.java:216)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.php.internal.ui.editor.validation.PHPReconcilingStrategy.validate(PHPReconcilingStrategy.java:213)
+	at org.eclipse.php.internal.ui.editor.validation.PHPReconcilingStrategy.validate(PHPReconcilingStrategy.java:190)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.validate(ReconcileStepForValidator.java:250)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.reconcileModel(ReconcileStepForValidator.java:208)
+	at org.eclipse.jface.text.reconciler.AbstractReconcileStep.reconcile(AbstractReconcileStep.java:89)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ValidatorStrategy.reconcile(ValidatorStrategy.java:269)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DocumentRegionProcessor.process(DocumentRegionProcessor.java:321)
+	at org.eclipse.wst.sse.ui.internal.reconcile.StructuredRegionProcessor.process(StructuredRegionProcessor.java:258)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DirtyRegionProcessor$BackgroundThread.run(DirtyRegionProcessor.java:691)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2017-12-07 15:16:49.553
+!MESSAGE Resource '/ /addPatternSetForm.php' does not exist.
+
+!ENTRY org.eclipse.php.core 4 4 2017-12-07 15:16:50.565
+!MESSAGE Resource '/ /addPatternSetForm.php' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/ /addPatternSetForm.php' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:335)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:209)
+	at org.eclipse.core.internal.resources.Resource.createMarker(Resource.java:696)
+	at org.eclipse.php.internal.core.builder.TaskTagBuildParticipantFactory$TaskTagBuildParticipantParticipant.createMarker(TaskTagBuildParticipantFactory.java:172)
+	at org.eclipse.php.internal.core.builder.TaskTagBuildParticipantFactory$TaskTagBuildParticipantParticipant.reportTask(TaskTagBuildParticipantFactory.java:156)
+	at org.eclipse.php.internal.core.builder.TaskTagBuildParticipantFactory$TaskTagBuildParticipantParticipant.build(TaskTagBuildParticipantFactory.java:281)
+	at org.eclipse.dltk.internal.core.ReconcileBuilder.run(ReconcileBuilder.java:108)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.dltk.internal.core.ReconcileBuilder.build(ReconcileBuilder.java:85)
+	at org.eclipse.dltk.internal.core.AbstractSourceModule.buildStructure(AbstractSourceModule.java:540)
+	at org.eclipse.dltk.internal.core.Openable.generateInfos(Openable.java:197)
+	at org.eclipse.dltk.internal.core.ModelElement.openWhenClosed(ModelElement.java:199)
+	at org.eclipse.dltk.internal.core.SourceModule.makeConsistent(SourceModule.java:253)
+	at org.eclipse.dltk.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:77)
+	at org.eclipse.dltk.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:57)
+	at org.eclipse.dltk.internal.core.ModelOperation.run(ModelOperation.java:703)
+	at org.eclipse.dltk.internal.core.ModelOperation.runOperation(ModelOperation.java:769)
+	at org.eclipse.dltk.internal.core.SourceModule.reconcile(SourceModule.java:301)
+	at org.eclipse.php.internal.ui.editor.validation.PHPReconcilingStrategy.reconcile(PHPReconcilingStrategy.java:150)
+	at org.eclipse.php.internal.ui.editor.validation.PHPReconcilingStrategy.access$0(PHPReconcilingStrategy.java:138)
+	at org.eclipse.php.internal.ui.editor.validation.PHPReconcilingStrategy$2.run(PHPReconcilingStrategy.java:216)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.php.internal.ui.editor.validation.PHPReconcilingStrategy.validate(PHPReconcilingStrategy.java:213)
+	at org.eclipse.php.internal.ui.editor.validation.PHPReconcilingStrategy.validate(PHPReconcilingStrategy.java:190)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.validate(ReconcileStepForValidator.java:250)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.reconcileModel(ReconcileStepForValidator.java:208)
+	at org.eclipse.jface.text.reconciler.AbstractReconcileStep.reconcile(AbstractReconcileStep.java:89)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ValidatorStrategy.reconcile(ValidatorStrategy.java:269)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DocumentRegionProcessor.process(DocumentRegionProcessor.java:321)
+	at org.eclipse.wst.sse.ui.internal.reconcile.StructuredRegionProcessor.process(StructuredRegionProcessor.java:258)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DirtyRegionProcessor$BackgroundThread.run(DirtyRegionProcessor.java:691)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2017-12-07 15:16:50.565
+!MESSAGE Resource '/ /addPatternSetForm.php' does not exist.
+
+!ENTRY org.eclipse.php.core 4 4 2017-12-07 15:16:52.069
+!MESSAGE Resource '/ /addPatternSetForm.php' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/ /addPatternSetForm.php' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:335)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:209)
+	at org.eclipse.core.internal.resources.Resource.createMarker(Resource.java:696)
+	at org.eclipse.php.internal.core.builder.TaskTagBuildParticipantFactory$TaskTagBuildParticipantParticipant.createMarker(TaskTagBuildParticipantFactory.java:172)
+	at org.eclipse.php.internal.core.builder.TaskTagBuildParticipantFactory$TaskTagBuildParticipantParticipant.reportTask(TaskTagBuildParticipantFactory.java:156)
+	at org.eclipse.php.internal.core.builder.TaskTagBuildParticipantFactory$TaskTagBuildParticipantParticipant.build(TaskTagBuildParticipantFactory.java:281)
+	at org.eclipse.dltk.internal.core.ReconcileBuilder.run(ReconcileBuilder.java:108)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.dltk.internal.core.ReconcileBuilder.build(ReconcileBuilder.java:85)
+	at org.eclipse.dltk.internal.core.AbstractSourceModule.buildStructure(AbstractSourceModule.java:540)
+	at org.eclipse.dltk.internal.core.Openable.generateInfos(Openable.java:197)
+	at org.eclipse.dltk.internal.core.ModelElement.openWhenClosed(ModelElement.java:199)
+	at org.eclipse.dltk.internal.core.SourceModule.makeConsistent(SourceModule.java:253)
+	at org.eclipse.dltk.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:77)
+	at org.eclipse.dltk.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:57)
+	at org.eclipse.dltk.internal.core.ModelOperation.run(ModelOperation.java:703)
+	at org.eclipse.dltk.internal.core.ModelOperation.runOperation(ModelOperation.java:769)
+	at org.eclipse.dltk.internal.core.SourceModule.reconcile(SourceModule.java:301)
+	at org.eclipse.php.internal.ui.editor.validation.PHPReconcilingStrategy.reconcile(PHPReconcilingStrategy.java:150)
+	at org.eclipse.php.internal.ui.editor.validation.PHPReconcilingStrategy.access$0(PHPReconcilingStrategy.java:138)
+	at org.eclipse.php.internal.ui.editor.validation.PHPReconcilingStrategy$2.run(PHPReconcilingStrategy.java:216)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.php.internal.ui.editor.validation.PHPReconcilingStrategy.validate(PHPReconcilingStrategy.java:213)
+	at org.eclipse.php.internal.ui.editor.validation.PHPReconcilingStrategy.validate(PHPReconcilingStrategy.java:190)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.validate(ReconcileStepForValidator.java:250)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.reconcileModel(ReconcileStepForValidator.java:208)
+	at org.eclipse.jface.text.reconciler.AbstractReconcileStep.reconcile(AbstractReconcileStep.java:89)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ValidatorStrategy.reconcile(ValidatorStrategy.java:269)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DocumentRegionProcessor.process(DocumentRegionProcessor.java:321)
+	at org.eclipse.wst.sse.ui.internal.reconcile.StructuredRegionProcessor.process(StructuredRegionProcessor.java:258)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DirtyRegionProcessor$BackgroundThread.run(DirtyRegionProcessor.java:691)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2017-12-07 15:16:52.070
+!MESSAGE Resource '/ /addPatternSetForm.php' does not exist.
+
+!ENTRY org.eclipse.php.core 4 4 2017-12-07 15:16:56.578
+!MESSAGE Resource '/ /addPatternSetForm.php' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/ /addPatternSetForm.php' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:335)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:209)
+	at org.eclipse.core.internal.resources.Resource.createMarker(Resource.java:696)
+	at org.eclipse.php.internal.core.builder.TaskTagBuildParticipantFactory$TaskTagBuildParticipantParticipant.createMarker(TaskTagBuildParticipantFactory.java:172)
+	at org.eclipse.php.internal.core.builder.TaskTagBuildParticipantFactory$TaskTagBuildParticipantParticipant.reportTask(TaskTagBuildParticipantFactory.java:156)
+	at org.eclipse.php.internal.core.builder.TaskTagBuildParticipantFactory$TaskTagBuildParticipantParticipant.build(TaskTagBuildParticipantFactory.java:281)
+	at org.eclipse.dltk.internal.core.ReconcileBuilder.run(ReconcileBuilder.java:108)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.dltk.internal.core.ReconcileBuilder.build(ReconcileBuilder.java:85)
+	at org.eclipse.dltk.internal.core.AbstractSourceModule.buildStructure(AbstractSourceModule.java:540)
+	at org.eclipse.dltk.internal.core.Openable.generateInfos(Openable.java:197)
+	at org.eclipse.dltk.internal.core.ModelElement.openWhenClosed(ModelElement.java:199)
+	at org.eclipse.dltk.internal.core.SourceModule.makeConsistent(SourceModule.java:253)
+	at org.eclipse.dltk.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:77)
+	at org.eclipse.dltk.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:57)
+	at org.eclipse.dltk.internal.core.ModelOperation.run(ModelOperation.java:703)
+	at org.eclipse.dltk.internal.core.ModelOperation.runOperation(ModelOperation.java:769)
+	at org.eclipse.dltk.internal.core.SourceModule.reconcile(SourceModule.java:301)
+	at org.eclipse.php.internal.ui.editor.validation.PHPReconcilingStrategy.reconcile(PHPReconcilingStrategy.java:150)
+	at org.eclipse.php.internal.ui.editor.validation.PHPReconcilingStrategy.access$0(PHPReconcilingStrategy.java:138)
+	at org.eclipse.php.internal.ui.editor.validation.PHPReconcilingStrategy$2.run(PHPReconcilingStrategy.java:216)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.php.internal.ui.editor.validation.PHPReconcilingStrategy.validate(PHPReconcilingStrategy.java:213)
+	at org.eclipse.php.internal.ui.editor.validation.PHPReconcilingStrategy.validate(PHPReconcilingStrategy.java:190)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.validate(ReconcileStepForValidator.java:250)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.reconcileModel(ReconcileStepForValidator.java:208)
+	at org.eclipse.jface.text.reconciler.AbstractReconcileStep.reconcile(AbstractReconcileStep.java:89)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ValidatorStrategy.reconcile(ValidatorStrategy.java:269)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DocumentRegionProcessor.process(DocumentRegionProcessor.java:321)
+	at org.eclipse.wst.sse.ui.internal.reconcile.StructuredRegionProcessor.process(StructuredRegionProcessor.java:258)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DirtyRegionProcessor$BackgroundThread.run(DirtyRegionProcessor.java:691)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2017-12-07 15:16:56.579
+!MESSAGE Resource '/ /addPatternSetForm.php' does not exist.
+
+!ENTRY org.eclipse.php.core 4 4 2017-12-07 15:16:58.587
+!MESSAGE Resource '/ /addPatternSetForm.php' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/ /addPatternSetForm.php' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:335)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:209)
+	at org.eclipse.core.internal.resources.Resource.createMarker(Resource.java:696)
+	at org.eclipse.php.internal.core.builder.TaskTagBuildParticipantFactory$TaskTagBuildParticipantParticipant.createMarker(TaskTagBuildParticipantFactory.java:172)
+	at org.eclipse.php.internal.core.builder.TaskTagBuildParticipantFactory$TaskTagBuildParticipantParticipant.reportTask(TaskTagBuildParticipantFactory.java:156)
+	at org.eclipse.php.internal.core.builder.TaskTagBuildParticipantFactory$TaskTagBuildParticipantParticipant.build(TaskTagBuildParticipantFactory.java:281)
+	at org.eclipse.dltk.internal.core.ReconcileBuilder.run(ReconcileBuilder.java:108)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.dltk.internal.core.ReconcileBuilder.build(ReconcileBuilder.java:85)
+	at org.eclipse.dltk.internal.core.AbstractSourceModule.buildStructure(AbstractSourceModule.java:540)
+	at org.eclipse.dltk.internal.core.Openable.generateInfos(Openable.java:197)
+	at org.eclipse.dltk.internal.core.ModelElement.openWhenClosed(ModelElement.java:199)
+	at org.eclipse.dltk.internal.core.SourceModule.makeConsistent(SourceModule.java:253)
+	at org.eclipse.dltk.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:77)
+	at org.eclipse.dltk.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:57)
+	at org.eclipse.dltk.internal.core.ModelOperation.run(ModelOperation.java:703)
+	at org.eclipse.dltk.internal.core.ModelOperation.runOperation(ModelOperation.java:769)
+	at org.eclipse.dltk.internal.core.SourceModule.reconcile(SourceModule.java:301)
+	at org.eclipse.php.internal.ui.editor.validation.PHPReconcilingStrategy.reconcile(PHPReconcilingStrategy.java:150)
+	at org.eclipse.php.internal.ui.editor.validation.PHPReconcilingStrategy.access$0(PHPReconcilingStrategy.java:138)
+	at org.eclipse.php.internal.ui.editor.validation.PHPReconcilingStrategy$2.run(PHPReconcilingStrategy.java:216)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.php.internal.ui.editor.validation.PHPReconcilingStrategy.validate(PHPReconcilingStrategy.java:213)
+	at org.eclipse.php.internal.ui.editor.validation.PHPReconcilingStrategy.validate(PHPReconcilingStrategy.java:190)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.validate(ReconcileStepForValidator.java:250)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.reconcileModel(ReconcileStepForValidator.java:208)
+	at org.eclipse.jface.text.reconciler.AbstractReconcileStep.reconcile(AbstractReconcileStep.java:89)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ValidatorStrategy.reconcile(ValidatorStrategy.java:269)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DocumentRegionProcessor.process(DocumentRegionProcessor.java:321)
+	at org.eclipse.wst.sse.ui.internal.reconcile.StructuredRegionProcessor.process(StructuredRegionProcessor.java:258)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DirtyRegionProcessor$BackgroundThread.run(DirtyRegionProcessor.java:691)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2017-12-07 15:16:58.588
+!MESSAGE Resource '/ /addPatternSetForm.php' does not exist.
+
+!ENTRY org.eclipse.php.core 4 4 2017-12-07 15:17:00.596
+!MESSAGE Resource '/ /addPatternSetForm.php' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/ /addPatternSetForm.php' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:335)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:209)
+	at org.eclipse.core.internal.resources.Resource.createMarker(Resource.java:696)
+	at org.eclipse.php.internal.core.builder.TaskTagBuildParticipantFactory$TaskTagBuildParticipantParticipant.createMarker(TaskTagBuildParticipantFactory.java:172)
+	at org.eclipse.php.internal.core.builder.TaskTagBuildParticipantFactory$TaskTagBuildParticipantParticipant.reportTask(TaskTagBuildParticipantFactory.java:156)
+	at org.eclipse.php.internal.core.builder.TaskTagBuildParticipantFactory$TaskTagBuildParticipantParticipant.build(TaskTagBuildParticipantFactory.java:281)
+	at org.eclipse.dltk.internal.core.ReconcileBuilder.run(ReconcileBuilder.java:108)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.dltk.internal.core.ReconcileBuilder.build(ReconcileBuilder.java:85)
+	at org.eclipse.dltk.internal.core.AbstractSourceModule.buildStructure(AbstractSourceModule.java:540)
+	at org.eclipse.dltk.internal.core.Openable.generateInfos(Openable.java:197)
+	at org.eclipse.dltk.internal.core.ModelElement.openWhenClosed(ModelElement.java:199)
+	at org.eclipse.dltk.internal.core.SourceModule.makeConsistent(SourceModule.java:253)
+	at org.eclipse.dltk.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:77)
+	at org.eclipse.dltk.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:57)
+	at org.eclipse.dltk.internal.core.ModelOperation.run(ModelOperation.java:703)
+	at org.eclipse.dltk.internal.core.ModelOperation.runOperation(ModelOperation.java:769)
+	at org.eclipse.dltk.internal.core.SourceModule.reconcile(SourceModule.java:301)
+	at org.eclipse.php.internal.ui.editor.validation.PHPReconcilingStrategy.reconcile(PHPReconcilingStrategy.java:150)
+	at org.eclipse.php.internal.ui.editor.validation.PHPReconcilingStrategy.access$0(PHPReconcilingStrategy.java:138)
+	at org.eclipse.php.internal.ui.editor.validation.PHPReconcilingStrategy$2.run(PHPReconcilingStrategy.java:216)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.php.internal.ui.editor.validation.PHPReconcilingStrategy.validate(PHPReconcilingStrategy.java:213)
+	at org.eclipse.php.internal.ui.editor.validation.PHPReconcilingStrategy.validate(PHPReconcilingStrategy.java:190)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.validate(ReconcileStepForValidator.java:250)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.reconcileModel(ReconcileStepForValidator.java:208)
+	at org.eclipse.jface.text.reconciler.AbstractReconcileStep.reconcile(AbstractReconcileStep.java:89)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ValidatorStrategy.reconcile(ValidatorStrategy.java:269)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DocumentRegionProcessor.process(DocumentRegionProcessor.java:321)
+	at org.eclipse.wst.sse.ui.internal.reconcile.StructuredRegionProcessor.process(StructuredRegionProcessor.java:258)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DirtyRegionProcessor$BackgroundThread.run(DirtyRegionProcessor.java:691)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2017-12-07 15:17:00.596
+!MESSAGE Resource '/ /addPatternSetForm.php' does not exist.

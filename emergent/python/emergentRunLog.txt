@@ -1,0 +1,51 @@
+Running emergent version: 8.2.0 svn rev: 11077
+***WARNING: ProgVar output_file2 =  (String)  --  init from: BpStartup::GetInitFromVar() (path:
+   .ExportData.vars["output_file2"] )
+ variable with my name: output_file2 in init_from program: BpStartup not found.
+
+Network: Network_0 auto building
+Running startup program: BpStartup
+
+
+
+Network_0 Weights Initialized
+.programs["BpStartup"]: 	var=arg ProgVarFmArg :	00175   { // prog var fm arg: BpStartup
+	
+.programs["BpStartup"]: 	var=arg ProgVarFmArg :	00180     Program* other_prog = this.prog_code[19]->GetOtherProg();
+	
+.programs["BpStartup"]: 	var=arg ProgVarFmArg :	00185     other_prog->SetVarFmArg("input_file", "input_file");
+	
+.programs["BpStartup"]: 	var=arg ProgVarFmArg :	00190   } // prog var fm arg
+	
+.programs["BpStartup"]: 	var=arg ProgVarFmArg :	00195   { // prog var fm arg: BpStartup
+	
+Loaded project: /var/www/html/solarquant/emergent/good.proj
+log_dir: 
+tag: _gui
+input_file: 
+output_file: 
+input weights_file: 
+output weights_file: 
+Set tag in program: BpStartup to: test1
+Set log_dir in program: BpStartup to: log
+Set log_file_nm in program: BpStartup to: /var/www/html/solarquant/emergent/log/logFile1.txt
+Set max_epoch in program: BpTrain to: 50
+Set output_file in program: BpStartup to: /var/www/html/solarquant/emergent/output/outputFile.csv
+Set input_file in program: BpStartup to: /var/www/html/solarquant/emergent/python/src/training/inputs/input_131
+Set output_weights_file in program: BpStartup to: /var/www/html/solarquant/emergent/weights/weights_205_Solar
+Set mode in program: BpStartup to: train
+log_file_nm sent: /var/www/html/solarquant/emergent/log/logFile1.txt
+mode sent: train
+log_file_nm just set: /var/www/html/solarquant/emergent/log/logFile1.txt
+in mode train: train
+output_file sent: /var/www/html/solarquant/emergent/output/outputFile.csv
+input_file sent: /var/www/html/solarquant/emergent/python/src/training/inputs/input_131
+weights_file sent: 
+Saving epoch log data to:  log_file_nm = /var/www/html/solarquant/emergent/log/logFile1.txt
+Running: BpBatch
+.programs["BpStartup"]: 	call
+program() ProgramCall :	00316   { // call program: BpBatch
+	call
+program()   
+Network_0 Weights Initialized
+User Interrupt

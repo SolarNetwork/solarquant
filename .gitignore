@@ -4,11 +4,12 @@
 # nothing in the extra folder
 extra/
 
-#nothing in the database folder
-database/
 
 #nothing in the inputFiles folder
 emergent/inputFiles/*.dat
+
+#nothing big
+database/*.sql
 
 #nothing in the output folder
 emergent/output/*.csv

@@ -1,0 +1,2 @@
+#!/bin/bash
+emergent -nogui -ni -proj /var/www/html/solarquant/emergent/good.proj epochs=50 log_dir=log log_file_nm=/var/www/html/solarquant/emergent/log/logFile1.txt tag=test1 input_weights_file= output_weights_file=/var/www/html/solarquant/emergent/weights/weights_$2_$3 input_file=/var/www/html/solarquant/emergent/python/src/training/inputs/input_$1 output_file=/var/www/html/solarquant/emergent/output/outputFile.csv mode=train  &> emergentRunLog.txt

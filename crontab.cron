@@ -1,0 +1,11 @@
+
+LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64/
+PYTHONPATH=/home/matthew/.local/lib/python2.7/site-packages/
+
+*/1 * * * * java -jar /var/www/html/solarquant/java/SolarQuant/SolarQuantJobs.jar >> /var/www/html/solarquant/logs/cronlog.txt 2>&1
+
+
+
+#refresh predictions
+*/30 * * * * python /var/www/html/solarquant/prediction_output/predictions/UpdatePredictions.py >> /var/www/html/solarquant/logs/cronlog.txt 2>&1
+

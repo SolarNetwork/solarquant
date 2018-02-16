@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><script src="predictiontest_files/d3.js"></script>
+
+
+</head><body><div id="chart" class="rickshaw_graph"></div>
+
+<script>
+
+var graph = new Rickshaw.Graph( {
+    element: document.querySelector("#chart"), 
+    width: 285, 
+    height: 180, 
+    series: [{
+        color: 'steelblue',
+        data: [ 
+            { x: 0, y: 40 }, 
+            { x: 1, y: 49 }, 
+            { x: 2, y: 38 }, 
+            { x: 3, y: 30 }, 
+            { x: 4, y: 32 } ]
+    }]
+});
+
+graph.render();
+
+</script>
+</body></html>

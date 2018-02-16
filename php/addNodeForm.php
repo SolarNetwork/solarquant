@@ -17,7 +17,7 @@
 <span class='solar4'>Add a new node</span><br><br>
 
 <!--- add Entity --->
-<form method=POST action="nodeAction.php">
+<form method=POST action="addNode.php">
 
 <?php
 
@@ -31,30 +31,30 @@
 
 <tr>
 	<td ><span class="solar4">Node ID</span></td>
-	<td><input class="solar4" type="text" name="nodeId" value="" size="6"></td>
+	<td><input class="solar4" type="text" name="nodeId" value="" size="6"  required></td>
 </tr>
 <tr>
 	<td><span class="solar4">Node Type Id (1 = actual, 2 = virtual)</span></td>
-	<td><input class="solar4" type="text" name="nodeTypeId" value="" size="6"></td>
+	<td><input class="solar4" type="text" name="nodeTypeId" value="" size="6"  required></td>
 </tr>
 <tr>
 	<td ><span class="solar4">Location</span></td>
-	<td><input class="solar4" type="text" name="location" value="" size="40"></td>
+	<td><input class="solar4" type="text" name="location" value="" size="40"  required></td>
 	
 </tr>
 <tr>
 	<td ><span class="solar4">Time Zone (e.g. Pacific/Auckland)</span></td>
-	<td><input class="solar4" type="text" name="timeZone" value="" size="40"></td>
+	<td><input class="solar4" type="text" name="timeZone" value="" size="40"  required></td>
 	
 </tr>
 <tr>
 	<td ><span class="solar4">City</span></td>
-	<td><input class="solar4" type="text" name="city" value="" size="40"></td>
+	<td><input class="solar4" type="text" name="city" value="" size="40"  required></td>
 	
 </tr>
 <tr>
 	<td ><span class="solar4">Country</span></td>
-	<td><input class="solar4" type="text" name="country" value="" size="40"></td>
+	<td><input class="solar4" type="text" name="country" value="" size="40"  required></td>
 	
 </tr>
 <tr>

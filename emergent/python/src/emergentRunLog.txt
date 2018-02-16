@@ -1,0 +1,9 @@
+Running emergent version: 8.5.2 svn rev: 11411
+Quitting non-interactive job on error
+***ERROR: FindGlobalTypeName: type named: Unit_Group not found!
+
+
+***WARNING: ProgVar output_file2 =  (String)  --  init from: BpStartup::GetInitFromVar() (path:
+   .ExportData.vars["output_file2"] )
+ variable with my name: output_file2 in init_from program: BpStartup not found.
+

@@ -604,21 +604,13 @@ keygen 4 0=0;
 	$theError->module = "PatternSet::getMyDatum";
 	$theError->details = "for patternset:".$this->id." patternSetTypeId:".$this->patternSetTypeId." and statusId:".$this->statusId ;
 	$theError->add();
-	
-	if ($this->analysisEngineId == 1)
-	{
-			//call python script
-	}
-	elseif ($this->analysisEngineId == 2)
-	{
+		
+
 
   	//if the status is 1 - brand new empty but flagged for processing
   	if ($this->statusId == 1) 
   	{
-	  
-		
-
-
+  	
   		
   	  	//if the type is 1,2,3
   	  	if ( ($this->patternSetTypeId == 1) | ($this->patternSetTypeId == 2) | ($this->patternSetTypeId == 3) )
@@ -744,8 +736,6 @@ keygen 4 0=0;
 
  
 	} //statusId is 8
-
-} //if analysisEngineId == 2
   	  
 	
   }
@@ -855,7 +845,6 @@ keygen 4 0=0;
 		$theUtility = new SolarUtility;
 		
 		
-		
 		if ($datumType == "Weather")
 		{
 			echo "datumType == Weather <br />";
@@ -954,8 +943,7 @@ keygen 4 0=0;
 			echo "months :".$months."<br />";
 			echo "days :".$days."<br />";
 
-
-			
+		
 			$theUri = "/solarquery/api/v1/pub/location/datum/list?locationId=301025&sourceIds=NZ%20MetService&offset=0&max=10&startDate=".$chunkStartDate."&endDate=".$chunkEndDate;
 			
 			
@@ -2627,9 +2615,11 @@ $forecastArray = array(
 
 //second pass array with columns: 0: time 1:temperature 2:pressure 3: sky
 //set the URL for forecast information
+
 $theEndpoint = "http://api.met.no/weatherapi/locationforecast/1.9/?lat=".$theNode->latitude.";lon=".$theNode->longitude;
 $ch = curl_init($theEndpoint);
 //$ch = curl_init("http://api.met.no/weatherapi/locationforecast/1.9/?lat=-36.8;lon=174");
+
 //open the file
 $fp = fopen($theFile, "w");
 //set curl settings

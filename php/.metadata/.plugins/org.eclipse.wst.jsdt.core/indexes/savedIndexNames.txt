@@ -1,0 +1,1 @@
+INDEX VERSION 1.4+/var/www/html/solarquant/php/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes

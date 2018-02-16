@@ -41,17 +41,9 @@ class Node
     
     function constructFromRow($row)
     {
-    	$this->id = $row["node_id"];
-    	$this->location = $row["location"];
-		$this->wcIdentifier = $row["wc_identifier"];
-        $this->timeZone = $row["time_zone"];
-        $this->latitude = $row["latitude"];
-        $this->longitude = $row["longitude"];
-		$this->totalWatts = $row["total_watts"];
-		$this->scalingFactor = $row["scaling_factor"];
-		$this->isSubscribedForTraining = $row["is_subscribed_for_training"];
-		$this->weatherNodeId = $row["weather_node_id"];
-		$this->subscribedSourceIds = $row["subscribed_source_ids"];
+    	$this->id = $row["NODE_ID"];
+    	$this->location = $row["LOCATION"];
+        $this->timeZone = $row["TIMEZONE"];
 
     }
    
@@ -162,10 +154,6 @@ class Node
 			echo("<td align='center'>\n");
 				echo ("TIMEZONE");
 			echo("</td>\n");
-
-			echo("<td align='center'>\n");
-				echo ("TRAINING");
-			echo("</td>\n");
 			
 			echo("<td align='center'>\n");
 				echo ("ACTION");
@@ -203,6 +191,8 @@ class Node
 		{
 			$sql = "select node_id, location, wc_identifier, time_zone, latitude, longitude, is_subscribed_for_training from node where node_type_id = 2 order by location asc";
 		}
+		
+		$sql = "SELECT * FROM registered_nodes";
 		
 		//debug
 		//echo("in Node:ListAll sql:". $sql. "<br>");
@@ -252,10 +242,6 @@ class Node
 				echo("<td align='center'>\n");
 					echo ($theNode->timeZone);
 				echo("</td>\n");
-
-				echo("<td align='center'>\n");
-					echo ($theNode->isSubscribedForTraining);
-				echo("</td>\n");
 				
 				echo("<td align='center'>\n");
 
@@ -265,17 +251,6 @@ class Node
 					echo($theNode->id);
 					echo("'><button type='button' class='btn btn-success'>Edit</button></a>\n");
 
-					echo(" <a href='nodeAction.php?function=viewProgress&nodeId=");
-					echo($theNode->id);
-					echo("'><button type='button' class='btn btn-success'>Progress</button></a>\n");
-					
-					echo(" <a href='nodeAction.php?function=createSinglePattern&nodeId=");
-					echo($theNode->id);
-					echo("'><button type='button' class='btn btn-success'>Add Pattern</button></a>\n");
-
-					echo(" <a href='nodeAction.php?function=refreshSources&nodeId=");
-					echo($theNode->id);
-					echo("'><button type='button' class='btn btn-info'>Refresh Sources</button></a>\n");
 					
 					echo(" <a href='nodeAction.php?function=delete&nodeId=");
 					echo($theNode->id);
@@ -890,14 +865,6 @@ function daysDifference($startDate, $endDate)
     	    elseif ($status == "inProcess")
     	    {
     	    	  $statusId = 1;  
-			}
-			elseif ($status == "dataDownloaded")
-    	    {
-    	    	  $statusId = 2;  
-			}
-			elseif ($status == "emergentDataNormalised")
-    	    {
-    	    	  $statusId = 3;  
     	    }
     	    elseif ($status == "trainingFileCreated")
     	    {
@@ -953,13 +920,6 @@ function daysDifference($startDate, $endDate)
 			{
 			
 				$sql.= " AND pnm.node_id = ".$this->id." AND p.status_id = ".$statusId;
-
-				if ( ($status == "emergentDataNormalised") | ($status == "trainingFileCreated") | ($status == "completedSuccessfully") )
-				{
-					//make sure we only look at emergent cases  TODO centralise variables here
-					$sql.= " AND p.analysis_engine_id = 2 ";
-				}
-
 				
 				//if we're looking for futureForecast patternSets
 				if ($status == "futureForecast")
@@ -974,8 +934,8 @@ function daysDifference($startDate, $endDate)
 		}
 		
 		
-		//added to support multiple status
-		if (($status == "trainingFileCreated") | ($status == "inProcess") | ($status == "dataDownloaded") | ($status == "emergentDataNormalised") | ($status == "completedSuccessfully") )
+		
+		if (($status == "trainingFileCreated") | ($status == "inProcess") | ($status == "completedSuccessfully") )
 		{
 			$sql .=	" ORDER BY pnm.pattern_set_id DESC ";
 		}
@@ -1015,6 +975,7 @@ function daysDifference($startDate, $endDate)
     
     function add()
     {
+
         //try to get a database connection if there isn't one already open
     	if ($this->dbLink == "")
     	{
@@ -1492,7 +1453,7 @@ function daysDifference($startDate, $endDate)
 		//$result->data_seek(0);
     	    
     	    // setup sql
-		$sql = "delete from node where node_id = ".$this->id;
+		$sql = "delete from registered_nodes where NODE_ID = ".$this->id;
 
 		
 		//echo("delete sql:". $sql. "<br>");
