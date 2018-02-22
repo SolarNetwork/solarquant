@@ -1,0 +1,44 @@
+2018-02-21 10:41:40,233 - emergentlogger - INFO - Running emergent!
+2018-02-21 10:41:40,242 - emergentlogger - INFO - Started prediction job
+2018-02-21 10:41:40,242 - emergentlogger - INFO - Getting metadata
+2018-02-21 10:41:40,243 - emergentlogger - INFO - creating prediction input file
+2018-02-21 10:41:40,378 - emergentlogger - INFO - prediction begun
+2018-02-21 11:00:02,484 - emergentlogger - INFO - Running emergent!
+2018-02-21 11:00:02,486 - emergentlogger - INFO - Started training job
+2018-02-21 11:00:02,486 - emergentlogger - INFO - Getting metadata
+2018-02-21 11:00:02,486 - emergentlogger - INFO - creating training input file
+2018-02-21 11:00:02,703 - emergentlogger - INFO - training begun
+2018-02-21 11:10:02,596 - emergentlogger - INFO - Running emergent!
+2018-02-21 11:10:02,598 - emergentlogger - INFO - Started training job
+2018-02-21 11:10:02,598 - emergentlogger - INFO - Getting metadata
+2018-02-21 11:10:02,598 - emergentlogger - INFO - creating training input file
+2018-02-21 11:10:02,907 - emergentlogger - INFO - training begun
+2018-02-21 11:15:19,381 - emergentlogger - INFO - evaluation begun
+2018-02-21 11:15:35,995 - emergentlogger - INFO - evaluation begun
+2018-02-21 11:17:02,111 - emergentlogger - INFO - Running emergent!
+2018-02-21 11:17:02,113 - emergentlogger - INFO - Started training job
+2018-02-21 11:17:02,113 - emergentlogger - INFO - Getting metadata
+2018-02-21 11:17:02,114 - emergentlogger - INFO - creating training input file
+2018-02-21 11:17:02,331 - emergentlogger - INFO - training begun
+2018-02-21 11:32:26,329 - emergentlogger - INFO - evaluation begun
+2018-02-21 11:32:33,977 - emergentlogger - INFO - Storing output
+2018-02-21 11:32:34,142 - emergentlogger - INFO - Finished.
+2018-02-21 11:53:02,057 - emergentlogger - INFO - Running emergent!
+2018-02-21 11:53:02,059 - emergentlogger - INFO - Started training job
+2018-02-21 11:53:02,059 - emergentlogger - INFO - Getting metadata
+2018-02-21 11:53:02,060 - emergentlogger - INFO - creating training input file
+2018-02-21 11:53:02,275 - emergentlogger - INFO - training begun
+2018-02-21 12:05:02,214 - emergentlogger - INFO - evaluation begun
+2018-02-21 12:05:07,804 - emergentlogger - INFO - Storing output
+2018-02-21 12:05:07,963 - emergentlogger - INFO - Finished.
+2018-02-21 14:21:16,475 - emergentlogger - INFO - Running emergent!
+2018-02-21 14:21:16,477 - emergentlogger - INFO - Started prediction job
+2018-02-21 14:21:16,477 - emergentlogger - INFO - Getting metadata
+2018-02-21 14:21:16,478 - emergentlogger - INFO - creating prediction input file
+2018-02-21 14:21:16,501 - emergentlogger - INFO - prediction begun
+2018-02-21 14:22:31,143 - emergentlogger - INFO - Running emergent!
+2018-02-21 14:22:31,145 - emergentlogger - INFO - Started prediction job
+2018-02-21 14:22:31,145 - emergentlogger - INFO - Getting metadata
+2018-02-21 14:22:31,145 - emergentlogger - INFO - creating prediction input file
+2018-02-21 14:22:31,169 - emergentlogger - INFO - prediction begun
+2018-02-21 14:22:33,942 - emergentlogger - INFO - storing output

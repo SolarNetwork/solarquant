@@ -4,7 +4,7 @@ $servername = "localhost";
 $username = "solarquant";
 $password = "solarquant";
 $dbname = "solarquant";
-$file = '/var/www/html/solarquant/php/log.txt';
+$file = '../log.txt';
 
 $reqId =  $_REQUEST['reqId'];
 
@@ -16,7 +16,7 @@ $out = array();
 file_put_contents($file, "$query", FILE_APPEND);
 while ($row = $result->fetch_assoc()) {
         $out[] = $row;
-    }
+   }
 
 
 $json_out = json_encode($out);   

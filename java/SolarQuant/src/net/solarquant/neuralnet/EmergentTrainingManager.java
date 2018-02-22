@@ -1,12 +1,10 @@
 package net.solarquant.neuralnet;
 
-import java.io.BufferedReader;
 import java.io.File;
 import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.TimeZone;
 import org.apache.commons.lang.time.DateUtils;
 import net.solarquant.database.Request;
 
@@ -63,7 +61,9 @@ public class EmergentTrainingManager extends TrainingManager{
 	protected void updateStoredData(Request r) {
 		Date lastDate = db.getLastDatumCreatedDate(r);
 		Date cDate = new Date();
-
+		SimpleDateFormat formatter = new SimpleDateFormat("yyyy-M-dd:HH:mm");
+		formatter.setTimeZone(TimeZone.getTimeZone("UTC"));
+		
 		ProcessBuilder pb;
 		if ( lastDate == null ) {
 			//if is first time retrieving data for this node/source, do not set start/end parameters
@@ -71,24 +71,25 @@ public class EmergentTrainingManager extends TrainingManager{
 
 		} else {
 
-			String start = new SimpleDateFormat("yyyy-M-dd:HH:mm").format(lastDate);
-			String end = new SimpleDateFormat("yyyy-M-dd:HH:mm").format(cDate);
+			String start = formatter.format(lastDate);
+			String end = formatter.format(cDate);
+			logger.debug(end);
 			pb = new ProcessBuilder("python", "DatabasePopulator.py", "-r", "" + r.getRequestId(), "-s",
 					start, "-e", end);
 		}
 
-		logger.info(pb.command());
+		
 		pb.directory(new File(location + "/../../data_retrieval"));
 		logger.info("running data retrieval python at location: " + location + "/../../data_retrieval");
+		logger.info("command = " + pb.command());
 
 		try {
 
 			Process p = pb.start();
 
-
 		} catch ( IOException e ) {
 			logger.error("ERROR:", e);
-		}	
+		}
 	}
 
 }

@@ -1,9 +1,57 @@
-Running emergent version: 8.5.2 svn rev: 11411
-Quitting non-interactive job on error
-***ERROR: FindGlobalTypeName: type named: Unit_Group not found!
-
-
+Running emergent version: 8.2.1 svn rev: 11091
 ***WARNING: ProgVar output_file2 =  (String)  --  init from: BpStartup::GetInitFromVar() (path:
    .ExportData.vars["output_file2"] )
  variable with my name: output_file2 in init_from program: BpStartup not found.
 
+Network: Network_0 auto building
+Running startup program: BpStartup
+
+
+
+Network_0 Weights Initialized
+.programs["BpStartup"]: 	var=arg ProgVarFmArg :	00175   { // prog var fm arg: BpStartup
+	
+.programs["BpStartup"]: 	var=arg ProgVarFmArg :	00180     Program* other_prog = this.prog_code[19]->GetOtherProg();
+	
+.programs["BpStartup"]: 	var=arg ProgVarFmArg :	00185     other_prog->SetVarFmArg("input_file", "input_file");
+	
+.programs["BpStartup"]: 	var=arg ProgVarFmArg :	00190   } // prog var fm arg
+	
+.programs["BpStartup"]: 	var=arg ProgVarFmArg :	00195   { // prog var fm arg: BpStartup
+	
+Loaded project: /var/www/html/solarquant/emergent/good.proj
+log_dir: 
+tag: _gui
+input_file: 
+output_file: 
+input weights_file: 
+output weights_file: 
+Set tag in program: BpStartup to: test1
+Set log_dir in program: BpStartup to: log
+Set log_file_nm in program: BpStartup to: /var/www/html/solarquant/emergent/log/logFile1.txt
+Set max_batch in program: BpBatch to: 1
+Set output_file in program: BpStartup to: /var/www/html/solarquant/emergent/python/test_out/out_200.csv
+Set input_file in program: BpStartup to: /var/www/html/solarquant/emergent/python/src/training/inputs/input_200
+Set input_weights_file in program: BpStartup to: /var/www/html/solarquant/emergent/weights/weights_205_Solar.wts
+Set mode in program: BpStartup to: question
+log_file_nm sent: /var/www/html/solarquant/emergent/log/logFile1.txt
+mode sent: question
+log_file_nm just set: /var/www/html/solarquant/emergent/log/logFile1.txt
+before loadiing weights_file:/var/www/html/solarquant/emergent/weights/weights_205_Solar.wts
+.programs["BpStartup"]: 	method() MethodCall :	00224     network->LoadWeights(input_weights_file);
+	
+after loadiing weights_file:/var/www/html/solarquant/emergent/weights/weights_205_Solar.wts
+.programs["BpStartup"]: 	call
+program() ProgramCall :	00239     { // call program: BpEpochTest
+	call
+program()     
+.programs.gp["BpAll_Std"]["ExportData"]: 	var=arg ProgVarFmArg :	00027   { // prog var fm arg: ExportData
+	
+Set output_file in program: ExportData to: /var/www/html/solarquant/emergent/python/test_out/out_200.csv
+from ExportData output_file: /var/www/html/solarquant/emergent/python/test_out/out_200.csv
+.programs.gp["BpAll_Std"]["ExportData"]: 	method() MethodCall :	00037   FinalData->ExportData(output_file, FinalData);
+	
+Conversion: (Int) not defined for type: DataTable
+ExportData ExportData line: 000037
+  FinalData->ExportData(output_file, FinalData);
+Quitting non-interactive job on error

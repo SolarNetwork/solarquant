@@ -11,7 +11,7 @@ def setupTrainingOutput(reqId):
     dates = []
     predictions = []
     real = []
-    with open(file) as f:
+    with open(file, 'r') as f:
         reader = csv.DictReader(f, delimiter='	')
         for row in reader:
             predictions.append(row['Output_act_0'])

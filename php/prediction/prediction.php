@@ -171,6 +171,32 @@ d3.json("./graphFromDatabase.php?reqId="+localStorage.getItem("reqId") , functio
       .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
       .call(zoom);
 
+svg.append("text")
+        .attr("x", (width / 2))             
+        .attr("y", 10 + (margin.top))
+        .attr("text-anchor", "middle")  
+        .style("font-size", "16px") 
+        .style("text-decoration", "underline")  
+        .text("Watt Hours vs Date");
+
+  svg.append("text")
+
+      .attr("y", 0 + margin.left)
+      .attr("x",0 + (height / 4))
+      .attr("dy", "1em")
+      .style("font-size", "16px") 
+      .style("text-anchor", "middle")
+
+      .text("Watt Hours");      
+
+  svg.append("text")
+
+      .attr("y", 78 + margin.bottom*3)
+      .attr("x",0 + (width/2))
+      .attr("dy", "1em")
+      .style("font-size", "16px") 
+      .style("text-anchor", "middle")
+      .text("Date"); 
 
 });
 

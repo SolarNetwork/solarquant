@@ -1,6 +1,6 @@
 <?php
 
-$file = '/var/www/html/solarquant/php/log.txt';
+$file = './log.txt';
 
 
 
@@ -53,7 +53,10 @@ $batchSize = $_REQUEST['batchSize'];
 $epochs = $_REQUEST['epochs'];
 
 $dynamic = isset($_REQUEST['endDateToggle']);
-file_put_contents($file, "$dynamic", FILE_APPEND);
+if($dynamic == Null){
+$dynamic = 0;
+}
+
 
 $query = "INSERT INTO training_requests VALUES($val,'$name', $node, '$source','$cDate',$initState, '$engine', '$start', '$end', $dynamic, '$notes')";
 $idquery = "SELECT REQUEST_ID FROM training_requests ORDER BY REQUEST_ID DESC LIMIT 1";
@@ -77,7 +80,8 @@ file_put_contents($file, "$query2", FILE_APPEND);
 if($conn->query($query2) === TRUE){
 	file_put_contents($file, 'good 2', FILE_APPEND);
 }
-
+file_put_contents($file, "$dynamic", FILE_APPEND);
+header("location: trainingScreen/loadTrainingQueue.php"); 
 
 
 

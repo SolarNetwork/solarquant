@@ -2,19 +2,21 @@ from urllib2 import Request, urlopen
 import json
 import datetime
 import os
-
+#from V2Authorization import V2Authorization
 directory = os.path.dirname(__file__)
 
 
 # Class deals with API calls
 class DataRetriever:
+
     defaultStartDate = datetime.datetime.strptime("2015-01-01 00:00", "%Y-%m-%d %M:%S")
     formatTime = datetime.datetime.strptime
 
     PREFIX = "https://data.solarnetwork.net"
 
     def __init__(self, node_id, src_id, start_date, end_date):
-
+        #self.auth = V2Authorization(#construct using variables
+         #    )
         self.nodeId = node_id
         self.srcId = src_id
         self.chunksFolder = os.path.join(directory, "chunks/")
@@ -60,6 +62,7 @@ class DataRetriever:
             request = Request(self.PREFIX + "/solarquery/api/v1/pub/datum/"
                                             "list?nodeId=" + self.nodeId + "&aggregation=ThirtyMinute&startDate=" +
                               start_string + "&endDate=" + end_string + "&sourceIds=" + self.srcId + "&max=5000000")
+            #request.add_header("Authorization: " + self.auth.build("dfsdfsdf"))
 
             try:
                 response = urlopen(request)

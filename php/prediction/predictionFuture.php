@@ -142,6 +142,7 @@ d3.json("./graphFutureFromDatabase.php?reqId="+localStorage.getItem("reqId"), fu
   x2.domain(x.domain());
   y2.domain(y.domain());
 
+
  
   focus.append("path")
       .datum(data)

@@ -98,12 +98,7 @@ public class TensorflowTrainingManager extends TrainingManager{
 	//looks for output model with request Id number as indication of training completion.
 	@Override
 	protected boolean hasManagedProcessRunComplete(Request r) {
-		String modelLocation = location + "/../../tensorflow/SolarQuant/src/trained_models/" + r.getNodeId()
-				+"_" + r.getSourceId()+ "_model.h5";
-		if ( new File(modelLocation).exists() ) {
-			return true;
-		}
-		return false;
+		return db.checkTrainingComplete(r);
 	}
 
 	//starts the QuantExecutor entry point to begin training

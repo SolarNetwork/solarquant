@@ -94,7 +94,7 @@ var context = svg.append("g")
 
 
 
-var csvPath = "../../logs/"+localStorage.getItem("reqId")+"_log.csv";
+var csvPath = "../../logs/progress_logs/"+localStorage.getItem("reqId")+"_log.csv";
 d3.csv(csvPath, type, function(error, data) {
 
 
@@ -147,7 +147,7 @@ d3.csv(csvPath, type, function(error, data) {
 });
 
 function updateData(){
-var csvPath = "../../logs/"+localStorage.getItem("reqId")+"_log.csv";
+var csvPath = "../../logs/progress_logs/"+localStorage.getItem("reqId")+"_log.csv";
 d3.csv(csvPath, type, function(error, data) {
 
 
@@ -160,6 +160,12 @@ d3.csv(csvPath, type, function(error, data) {
       .datum(data)
       .attr("class", "area")
       .attr("d", area);
+
+ focus.select("g")
+      .attr("class", "axis axis--x")
+      .attr("transform", "translate(0," + height + ")")
+      .call(xAxis);
+
 
 });
 }

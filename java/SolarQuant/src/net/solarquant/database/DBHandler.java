@@ -200,6 +200,24 @@ public class DBHandler {
 			return false;
 		}
 	}
+	
+	
+	public boolean checkTrainingComplete(Request r) {
+		String query = "SELECT * FROM training_correlation WHERE REQUEST_ID = %s";
+		query = String.format(query, r.getRequestId());	
+		
+		Statement stmt;
+		try {
+			stmt = conn_.createStatement();
+			ResultSet rs = stmt.executeQuery(query);
+			return rs.next();
+
+		} catch ( SQLException e ) {
+			return false;
+		}
+	}
+	
+	
 }
 
 

@@ -88,7 +88,7 @@ if ($theButton == "")
 		echo("<link href='../css/bootstrap-theme.min.css' type='text/css' rel='stylesheet'>");
 		echo("<script src='../js/bootstrap.min.js'></script>");
 		echo("</head>\n");
-		
+
 		echo("<body bgcolor='#ffffff'>");
 		
 		$nodeType = trim($_REQUEST['type']);

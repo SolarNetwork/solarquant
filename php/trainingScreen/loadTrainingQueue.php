@@ -63,6 +63,11 @@ function viewProgress(reqId){
 function viewStateInfo(reqId){
 	location = "../stateInfo/info.php?reqId="+reqId;
 
+}
+function viewEmergentProgress(reqId){
+localStorage.setItem("reqId",reqId);
+	location = "../progress/emergentProgress.php";
+
 
 }
 
@@ -110,7 +115,7 @@ while ($row = $result->fetch_assoc()) {
     echo "<td>" . getCorrelationButton($row['STATUS'], $row['REQUEST_ID']) . 
     "  <button type='button' class='btn btn-danger btn-xs' 
             onclick='deleteRequest(" . $row['REQUEST_ID'] . ")'>Delete</button> ".           
-        getProgressButton($row['STATUS'], $row['REQUEST_ID'])."</td>";
+        getProgressButton($row['STATUS'], $row['REQUEST_ID'], $row['REQUEST_ENGINE'])."</td>";
 
     
     echo "</tr>";
@@ -129,12 +134,19 @@ function getCorrelationButton($num, $reqId)
     return $status;
 }
 
-function getProgressButton($num, $reqId)
+function getProgressButton($num, $reqId, $engine)
 {
+
     $status = "";
     if ($num == 3 || $num == 4) {
-        $status = " <button type='button' class='btn btn-success btn-xs'
-       onclick='viewProgress(" . $reqId . ")'>Progress</button>";
+	if(strtolower($engine) == "emergent"){
+
+		$status = " <button type='button' class='btn btn-success btn-xs'
+       		onclick='viewEmergentProgress(" . $reqId . ")'>Progress</button>";
+	}else{
+        	$status = " <button type='button' class='btn btn-success btn-xs'
+       		onclick='viewProgress(" . $reqId . ")'>Progress</button>";
+	}
     } else {
         $status = " <button type='button' class='btn btn-warning btn-xs'>Progress</button>";
     }

@@ -41,7 +41,7 @@ def generate(reqId):
 
             for i in range(numInputs):
                 if (i == 0):
-                    f.write(inpFormat.format( i) + firstFormat.format(numInputs))
+                    f.write(inpFormat.format(i) + firstFormat.format(numInputs))
                 else:
                     f.write(inpFormat.format(i))
             for i in range(numOutputs):

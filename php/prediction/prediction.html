@@ -117,7 +117,6 @@ d3.csv("../../prediction_output/28_correlation.csv", type, function(error, data)
 
 	  x.domain(d3.extent(data2, function(d) { return d.created; }));
 	  y.domain([0, d3.max(data2, function(d) { return d.wattHours; })]);
-	  alert(y.domain());
 	  x2.domain(x.domain());
 	  y2.domain(y.domain());
 

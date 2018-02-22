@@ -1,6 +1,6 @@
 <?php
 
-$file = '/var/www/html/solarquant/php/log.txt';
+$file = './log.txt';
 
 
 
@@ -47,5 +47,5 @@ foreach($jsonData->data as $value){
     $conn->query($query);
 }
 
-
+header("location: nodeScreen/loadNodes.php"); 
 ?>

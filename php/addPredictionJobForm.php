@@ -32,7 +32,7 @@
 				data:"value="+obj.value,
 				success: function(data){
 					$(sourceId).html(data);
-				}
+					}
 				});
 	    }
 	    
@@ -48,7 +48,6 @@
 <?php
 // get class into the page
 require_once ('../classes/tc_calendar.php');
-require_once ("../classes/SolarUtility.php");
 
 // TODO make this reflect the patternset
 $defaultEngineId = 2;
@@ -114,39 +113,109 @@ if (isset($nodeId)) {
 			<tr class='solar4'>
 				<td><span class="solar4">Start Date</span></td>
 				<td>
-        <?php
-        $now = new DateTime();
-        
-        // instantiate class and set properties
-        $myCalendar = new tc_calendar("startDate", true);
-        $myCalendar->setIcon("images/iconCalendar.gif");
-        
-        // $myCalendar->setDate(1, 8, 2014);
-        $myCalendar->setDate($now->format('d'), $now->format('m'), $now->format('Y'));
-        
-        // output the calendar
-        $myCalendar->writeScript();
-        
-        ?>
+<select>
+<?php
+$day = date("d");
+for($i=1; $i<=31; $i++){
+	echo("<option value='".$i."'>$i</option>");
+	if($day != $i){
+		echo("<option value='".$i."'>$i</option>");
+	}else{
+		echo("<option selected='selected' value='".$i."'>$i</option>");
+		
+	}
+}
+?>
+</select>
+
+<select>
+<?php
+$month = date("m");
+
+for($i=1; $i<=12; $i++){
+	
+	$dateObj   = DateTime::createFromFormat('!m', $i);
+	$monthName = $dateObj->format('F'); // March
+
+	if($month != $i){
+		echo("<option value='".$i."'>$monthName</option>");
+	}else{
+		echo("<option selected='selected' value='".$i."'>$monthName</option>");
+		
+	}
+}
+?>
+</select>
+
+<select>
+<?php
+$year = date("Y");
+for($i=1990; $i<=$year; $i++){
+	
+	if($i != $year-1){
+		echo("<option value='".$i."'>$i</option>");
+	}else{
+		echo("<option selected='selected' value='".$i."'>$i</option>");
+	}	
+}
+
+?>
+</select>
 	</td>
 
 			</tr>
 			<tr class='solar4'>
 				<td><span class="solar4">End Date</span></td>
 				<td>
+<select>
+<?php
+$day = date("d");
+for($i=1; $i<=31; $i++){
+	echo("<option value='".$i."'>$i</option>");
+	if($day != $i){
+		echo("<option value='".$i."'>$i</option>");
+	}else{
+		echo("<option selected='selected' value='".$i."'>$i</option>");
+		
+	}
+}
+?>
+</select>
+
+<select>
+<?php
+$month = date("m");
+
+for($i=1; $i<=12; $i++){
 	
-	<?php
+	$dateObj   = DateTime::createFromFormat('!m', $i);
+	$monthName = $dateObj->format('F'); // March
 
-// instantiate class and set properties
-$myCalendar = new tc_calendar("endDate", true);
-$myCalendar->setIcon("images/iconCalendar.gif");
-// $myCalendar->setDate(1, 8, 2014);
-$myCalendar->setDate($now->format('d'), $now->format('m'), $now->format('Y'));
+	if($month != $i){
+		echo("<option value='".$i."'>$monthName</option>");
+	}else{
+		echo("<option selected='selected' value='".$i."'>$monthName</option>");
+		
+	}
+}
+?>
+</select>
 
-// output the calendar
-$myCalendar->writeScript();
+<select>
+<?php
+$year = date("Y");
+for($i=1990; $i<=$year; $i++){
+	
+	if($i != $year){
+		echo("<option value='".$i."'>$i</option>");
+	}else{
+		echo("<option selected='selected' value='".$i."'>$i</option>");
+	}	
+}
 
-?>    Dynamic Refresh <label class="switch">
+?>
+</select>
+    Dynamic Refresh <label class="switch">
   <input type="checkbox" name="endDateToggle">
   <span class="slider round"></span>
 </label>

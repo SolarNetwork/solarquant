@@ -1,0 +1,23 @@
+2018-02-23 10:38:03,970 - pylog1 - INFO - Started QuantExecutor!
+2018-02-23 10:38:03,971 - pylog1 - INFO - Running training...
+2018-02-23 10:38:03,972 - pylog1 - INFO - Building model
+2018-02-23 10:38:04,113 - pylog1 - INFO - Retrieving training input
+2018-02-23 10:38:05,051 - pylog1 - INFO - Started normalization of data
+2018-02-23 10:38:05,329 - pylog1 - INFO - Fitting model
+2018-02-23 10:39:03,071 - pylog1 - INFO - Started QuantExecutor!
+2018-02-23 10:39:03,072 - pylog1 - INFO - Running training...
+2018-02-23 10:39:03,073 - pylog1 - INFO - Building model
+2018-02-23 10:39:03,132 - pylog1 - INFO - Retrieving training input
+2018-02-23 10:39:04,016 - pylog1 - INFO - Started normalization of data
+2018-02-23 10:39:04,280 - pylog1 - INFO - Fitting model
+2018-02-23 10:40:31,083 - pylog1 - INFO - Completed fitting
+2018-02-23 10:40:31,102 - pylog1 - INFO - Evaluating model
+2018-02-23 10:40:32,266 - pylog1 - INFO - Storing correlation
+2018-02-23 11:27:02,756 - pylog1 - INFO - Started QuantExecutor!
+2018-02-23 11:27:02,758 - pylog1 - INFO - Running prediction...
+2018-02-23 11:27:02,758 - pylog1 - INFO - Building model
+2018-02-23 11:27:02,827 - pylog1 - INFO - Retrieving prediction input
+2018-02-23 11:27:02,835 - pylog1 - INFO - Started normalization of data
+2018-02-23 11:27:03,247 - pylog1 - INFO - Running prediction
+2018-02-23 11:27:03,398 - pylog1 - INFO - Storing prediction output
+2018-02-23 11:27:03,399 - pylog1 - INFO - Storing prediction info in database!

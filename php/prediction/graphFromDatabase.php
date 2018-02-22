@@ -4,7 +4,7 @@ $servername = "localhost";
 $username = "solarquant";
 $password = "solarquant";
 $dbname = "solarquant";
-$file = '/var/www/html/solarquant/php/log.txt';
+$file = '../log.txt';
 
 $reqId =  $_REQUEST['reqId'];
 

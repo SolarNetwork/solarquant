@@ -26,9 +26,6 @@ emergent/extra/
 #any weights files
 emergent/weights/*.wts
 
-#admin images not needed
-admin/images/
-
 #anything in /ini except .example
 ini/*.txt
 ini/*.ini

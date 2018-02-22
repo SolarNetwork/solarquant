@@ -4,6 +4,8 @@ import datetime as dt
 import csv
 import mysql.connector
 import json
+import pytz
+
 
 cnx = mysql.connector.connect(user='solarquant', password='solarquant',
                               host='localhost',
@@ -38,11 +40,9 @@ def update_predictions(request_id):
                   startString + "&endDate=" + endString + "&sourceIds=" + srcId + "&max=5000000"
     response = urlopen(request)
 
-
-
     data = json.loads(response.read())
 
-    inp = [(line["wattHours"], request_id, dt.datetime.strptime(line["created"], "%Y-%m-%d %H:%M:%S.%fZ")) for line in data["data"]["results"]]
+    inp = [(line["wattHours"], request_id, dt.datetime.strptime(line["created"], "%Y-%m-%d %H:%M:%S.%fZ") + dt.timedelta(hours = 13)) for line in data["data"]["results"]]
     cursor.executemany(query,(inp))
     cnx.commit()
 

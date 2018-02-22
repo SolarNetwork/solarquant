@@ -1,0 +1,26 @@
+2018-02-23 10:35:02,682 - training_data_retriever - INFO - Started data retrieval for training job!
+2018-02-23 10:35:02,682 - training_data_retriever - INFO - Clearing out old chunks JSON
+2018-02-23 10:35:02,682 - training_data_retriever - INFO - Clearing out old weather JSON
+2018-02-23 10:35:02,682 - training_data_retriever - INFO - Accessing training request metadata
+2018-02-23 10:35:02,683 - training_data_retriever - INFO - Attempting to run DataRetriever to download new JSON
+2018-02-23 10:35:03,669 - training_data_retriever - INFO - Reading from JSON into memory
+2018-02-23 10:35:03,677 - training_data_retriever - INFO - Attempting to insert new weather datum into database
+2018-02-23 10:35:03,681 - training_data_retriever - ERROR - 'sky'
+2018-02-23 10:35:03,716 - training_data_retriever - ERROR - 1062 (23000): Duplicate entry '2018-02-20 00:30:00' for key 'PRIMARY'
+2018-02-23 10:35:03,717 - training_data_retriever - INFO - Attempting to insert new node datum into database
+2018-02-23 10:35:03,795 - training_data_retriever - INFO - Attempting to retrieve formatted datum + weather data to put into training input table
+2018-02-23 10:35:04,500 - training_data_retriever - INFO - Removing old training input
+2018-02-23 10:35:06,355 - training_data_retriever - INFO - Inserting new training input into database!!
+2018-02-23 10:35:25,501 - training_data_retriever - INFO - deleting JSON
+2018-02-23 10:35:25,508 - training_data_retriever - INFO - Finished.
+2018-02-23 11:26:01,920 - prediction_data_retriever - INFO - Started data retrieval for prediction job!
+2018-02-23 11:26:01,920 - prediction_data_retriever - INFO - Clearing out old chunks JSON
+2018-02-23 11:26:01,923 - prediction_data_retriever - INFO - Retrieving request metadata
+2018-02-23 11:26:01,924 - prediction_data_retriever - INFO - Downloading new weather data (if applicable)
+2018-02-23 11:26:06,009 - prediction_data_retriever - INFO - Adding new weather to database
+2018-02-23 11:26:06,040 - prediction_data_retriever - INFO - deleting old weather prediction data
+2018-02-23 11:26:06,041 - prediction_data_retriever - INFO - Adding new weather prediction data
+2018-02-23 11:26:06,140 - prediction_data_retriever - INFO - using defined start/end date to insert new prediction input
+2018-02-23 11:26:06,476 - prediction_data_retriever - INFO - deleting old predictions
+2018-02-23 11:26:06,533 - prediction_data_retriever - INFO - Inserting prediction input into table...
+2018-02-23 11:26:06,950 - prediction_data_retriever - INFO - Finished.
